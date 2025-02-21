@@ -1,47 +1,37 @@
 // header navigation menu
 
-var toggleOpen = document.getElementById('toggleOpen');
-var toggleClose = document.getElementById('toggleClose');
-var collapseMenu = document.getElementById('collapseMenu');
-var fullWidthMenu = document.getElementById('fullWidthMenu');
+// var toggleOpen = document.getElementById('toggleOpen');
+// var toggleClose = document.getElementById('toggleClose');
+// var collapseMenu = document.getElementById('collapseMenu');
+// var fullWidthMenu = document.getElementById('fullWidthMenu');
 
-function handleClick() {
-  if (
-    collapseMenu.style.display === 'block' ||
-    fullWidthMenu.style.display === 'block'
-  ) {
-    collapseMenu.style.display = 'none';
-    fullWidthMenu.style.display = 'none';
-  } else {
-    collapseMenu.style.display = 'block';
-    fullWidthMenu.style.display = 'block';
-  }
-}
-toggleOpen.addEventListener('click', handleClick);
-toggleClose.addEventListener('click', handleClick);
+// function handleClick() {
+//   if (
+//     collapseMenu.style.display === 'block' ||
+//     fullWidthMenu.style.display === 'block'
+//   ) {
+//     collapseMenu.style.display = 'none';
+//     fullWidthMenu.style.display = 'none';
+//   } else {
+//     collapseMenu.style.display = 'block';
+//     fullWidthMenu.style.display = 'block';
+//   }
+// }
+// toggleOpen.addEventListener('click', handleClick);
+// toggleClose.addEventListener('click', handleClick);
 
-/* Open the sidenav */
-function openNav() {
-  document.getElementById('mySidenav').style.width = '100%';
-}
+//  // // //////////////////////////////////
+// const menuToggle = document.getElementById('menu-toggle');
+// const menu = document.getElementById('menu');
+// const closeMenu = document.getElementById('close-menu');
 
-function closeNav() {
-  document.getElementById('mySidenav').style.width = '0';
-}
+// menuToggle.addEventListener('click', () => {
+//   menu.classList.add('menu-active');
+// });
 
-//
-
-const menuToggle = document.getElementById('menu-toggle');
-const menu = document.getElementById('menu');
-const closeMenu = document.getElementById('close-menu');
-
-menuToggle.addEventListener('click', () => {
-  menu.classList.add('menu-active');
-});
-
-closeMenu.addEventListener('click', () => {
-  menu.classList.remove('menu-active');
-});
+// closeMenu.addEventListener('click', () => {
+//   menu.classList.remove('menu-active');
+// });
 
 // sliders
 

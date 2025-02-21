@@ -44,39 +44,97 @@
                 class="absolute top-0 -z-[1] h-screen w-full bg-cover bg-center bg-no-repeat"
                 style="background-image: url('/assets/images/halfBlack.png')"
               ></div>
+
               <ul
                 class="flex justify-center list-disc flex-col space-y-5 min-w-72"
               >
-                <li class="flexBetween !list-disc">
+                <li class="flex items-center justify-between !list-disc">
                   <a
                     href="javascript:void(0)"
                     class="block hover:text-indigo-400 text-xl"
                     >Home</a
                   >
-                  <i class="fa-solid fa-chevron-right"></i>
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
                 </li>
-                <li class="flexBetween">
+                <li class="flex items-center justify-between !list-disc">
                   <a
                     href="javascript:void(0)"
-                    class="block hover:text-indigo-400"
-                    >About</a
+                    class="block hover:text-indigo-400 text-xl"
+                    >Security</a
                   >
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
                 </li>
-                <li class="flexBetween">
+
+                <li class="flex items-center justify-between !list-disc">
                   <a
                     href="javascript:void(0)"
-                    class="block hover:text-indigo-400"
-                    >Services</a
+                    class="block hover:text-indigo-400 text-xl"
+                    >Features</a
                   >
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
                 </li>
-                <li class="flexBetween">
+
+                <li class="flex items-center justify-between !list-disc">
                   <a
                     href="javascript:void(0)"
-                    class="block hover:text-indigo-400"
-                    >Contact</a
+                    class="block hover:text-indigo-400 text-xl"
+                    >Support</a
                   >
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
+                </li>
+
+                <li class="flex items-center justify-between !list-disc">
+                  <a
+                    href="javascript:void(0)"
+                    class="block hover:text-indigo-400 text-xl"
+                    >How It Works</a
+                  >
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
+                </li>
+
+                <li class="flex items-center justify-between !list-disc">
+                  <a
+                    href="javascript:void(0)"
+                    class="block hover:text-indigo-400 text-xl"
+                    >About Us</a
+                  >
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
+                </li>
+
+                <li class="flex items-center justify-between !list-disc">
+                  <a
+                    href="javascript:void(0)"
+                    class="block hover:text-indigo-400 text-xl"
+                    >Pricing</a
+                  >
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
                 </li>
               </ul>
+            </div>
+
+            <div class="hidden flexy flex-col lg:block">
+              <div class="flexy flex-col space-y-8">
+                <h1 class="uppercase text-6xl gelanoMedium">Nima</h1>
+                <div class="flexy flex-col space-y-5">
+                  <p class="text-xl">920 E Dixie Ave, Leesburg, FL 34748</p>
+                  <a class="text-xl" href="mailto:info@mywellnessstudio.com"
+                    >info@MyWellnessStudio.com</a
+                  >
+                  <a class="text-xl" href="tel:3527280786">(352) 728-0786</a>
+                </div>
+
+                <div class="flex gap-x-4">
+                  <a href="javascript:void(0)" class="w-12">
+                    <img src="assets/images/ig.png" class="img-fluid" alt="" />
+                  </a>
+                  <a href="javascript:void(0)" class="w-12">
+                    <img src="assets/images/fb.png" class="img-fluid" alt="" />
+                  </a>
+                  <a href="javascript:void(0)" class="w-12">
+                    <img src="assets/images/x.png" class="img-fluid" alt="" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -730,6 +788,7 @@
 
     <script src="assets/js/jquery-3.7.1.js"></script>
     <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
     <script>
       const sidebar = document.getElementById('sidebar');
@@ -762,7 +821,5 @@
         }
       });
     </script>
-
-    <script src="assets/js/main.js"></script>
   </body>
 </html>
