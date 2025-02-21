@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'Organetto-Regular';
+  src: url('/assets/fonts/organetto-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Galano-Grotesque';
+  src: url('/assets/fonts/Galano-Grotesque.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Galano-Grotesque-Light';
+  src: url('/assets/fonts/Galano-Grotesque-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Galano-Grotesque-Medium';
+  src: url('/assets/fonts/Galano-Grotesque-Medium.ttf') format('truetype');
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+/*  */
+
+body {
+  background: #fff;
+  color: #333333;
+  overflow-x: hidden;
+  font-family: 'Galano-Grotesque';
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.flexy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.itemsStart {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.justStart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.justCenter {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.itemsCent {
+  display: flex;
+  align-items: center;
+}
+
+.gelanoMedium {
+  font-family: 'Galano-Grotesque-Medium';
+  font-weight: 500;
+}
+
+.organetto {
+  font-family: 'Organetto-Regular';
+  font-weight: 500;
+}
+
+.gelanoLight {
+  font-family: 'Galano-Grotesque-Light';
+  font-weight: 300;
+}
+
+.verticalLr {
+  color: #fff;
+  text-transform: uppercase;
+  transform: rotate(180deg) translate(-1px);
+  writing-mode: vertical-lr;
+  text-align: center;
+  position: relative;
+  top: 1rem;
+}
+
+.verticalLr i {
+  transform: rotate(90deg);
+}
+
+.w3 {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.w3::before {
+  z-index: 2;
+  position: absolute;
+  content: '';
+  top: 1rem;
+  left: 0;
+  width: 1px !important;
+  height: 15rem !important;
+  background-color: #fff !important;
+}
+
+.w3::after {
+  z-index: 3;
+  position: absolute;
+  content: '';
+  top: 1rem;
+  left: -1.25px;
+  width: 3px !important;
+  height: 7rem !important;
+  background-color: #fff !important;
+}
+
+.servicesCont {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.serviceContent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: linear-gradient(180deg, #0099ff00 0%, #71c4ffff 100%);
+}
+
+.servicesCont:hover .serviceContent {
+  opacity: 1;
+}
+
+/*  */
+
+.sliderCont {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.sliderContent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: linear-gradient(180deg, #0099ff00 0%, #71c4ffff 100%);
+}
+
+.sliderCont:hover .sliderContent {
+  opacity: 1;
+}
+
+.studioCont {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.studioContent {
+  padding: 1rem;
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.studioCont:hover .studioContent {
+  opacity: 1;
+}
+
+.hoverOp0 {
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 20%;
+  transition: 0.5s ease;
+}
+
+.studioCont:hover .hoverOp0 {
+  opacity: 0 !important;
+}
