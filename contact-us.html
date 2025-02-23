@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nima | Home page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="assets/css/slick.css" rel="stylesheet" />
+    <link href="assets/css/slick-theme.css" rel="stylesheet" />
+
+    <link href="assets/css/globals.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style>
+      #btnClose:hover,
+      #open-sidebar:hover {
+        background-color: #ffffff;
+      }
+
+      #btnClose:hover > svg,
+      #open-sidebar:hover {
+        fill: #333333;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      class="fixed w-full min-h-screen overflow-hidden transition-transform transform -translate-x-full ease-in-out duration-500 z-[70]"
+      id="sidebar"
+    >
+      <div
+        class="fixed top-0 -z-[1] h-screen w-full bg-cover bg-center bg-no-repeat"
+        style="background-image: url('/assets/images/bgMenuWhite.png')"
+      ></div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 w-full h-screen">
+        <div class="flexStart flex-col text-white relative w-full h-full">
+          <div
+            class="absolute top-0 -z-[1] h-screen w-full bg-cover bg-center bg-no-repeat"
+            style="background-image: url('/assets/images/halfBlack.png')"
+          ></div>
+
+          <div class="flexStart w-56 pl-4 sm:pl-10 pt-4 sm:pt-12">
+            <a href="index.html" class="">
+              <img
+                src="assets/images/logoWhite.png"
+                class="img-fluid w-36"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <button
+            id="btnSMClose"
+            class="block lg:!hidden absolute top-10 right-10 z-[100] rounded-full w-9 h-9 flex items-center justify-center block cursor-pointer bg-white/[0.25]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-3.5 h-3.5 fill-black"
+              viewBox="0 0 320.591 320.591"
+            >
+              <path
+                d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                data-original="#000000"
+              ></path>
+              <path
+                d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                data-original="#000000"
+              ></path>
+            </svg>
+          </button>
+
+          <div class="flexy relative max-lg:-mt-40 lg:-mt-28 w-full h-full">
+            <ul
+              class="flex justify-center list-disc flex-col space-y-5 min-w-72"
+            >
+              <li class="flex items-center justify-between !list-disc">
+                <a
+                  href="javascript:void(0)"
+                  class="block hover:text-indigo-400 text-xl"
+                  >Home</a
+                >
+                <i class="fa-solid fa-chevron-right relative top-1"></i>
+              </li>
+              <li class="flex items-center justify-between !list-disc">
+                <a
+                  href="javascript:void(0)"
+                  class="block hover:text-indigo-400 text-xl"
+                  >Security</a
+                >
+                <i class="fa-solid fa-chevron-right relative top-1"></i>
+              </li>
+
+              <li class="flex items-center justify-between !list-disc">
+                <a
+                  href="javascript:void(0)"
+                  class="block hover:text-indigo-400 text-xl"
+                  >Features</a
+                >
+                <i class="fa-solid fa-chevron-right relative top-1"></i>
+              </li>
+
+              <li class="flex items-center justify-between !list-disc">
+                <a
+                  href="javascript:void(0)"
+                  class="block hover:text-indigo-400 text-xl"
+                  >Support</a
+                >
+                <i class="fa-solid fa-chevron-right relative top-1"></i>
+              </li>
+
+              <li class="flex items-center justify-between !list-disc">
+                <a
+                  href="javascript:void(0)"
+                  class="block hover:text-indigo-400 text-xl"
+                  >How It Works</a
+                >
+                <i class="fa-solid fa-chevron-right relative top-1"></i>
+              </li>
+
+              <li class="flex items-center justify-between !list-disc">
+                <a
+                  href="javascript:void(0)"
+                  class="block hover:text-indigo-400 text-xl"
+                  >About Us</a
+                >
+                <i class="fa-solid fa-chevron-right relative top-1"></i>
+              </li>
+
+              <li class="flex items-center justify-between !list-disc">
+                <a
+                  href="javascript:void(0)"
+                  class="block hover:text-indigo-400 text-xl"
+                  >Pricing</a
+                >
+                <i class="fa-solid fa-chevron-right relative top-1"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="!hidden flexy flex-col w-full h-screen lg:!block">
+          <div class="flexy flex-col space-y-8 w-full h-full">
+            <button
+              id="btnClose"
+              class="absolute lg:top-11 lg:right-14 z-[100] rounded-full w-9 h-9 flex items-center justify-center block cursor-pointer bg-white/[0.25]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-3.5 h-3.5 fill-black"
+                viewBox="0 0 320.591 320.591"
+              >
+                <path
+                  d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                  data-original="#000000"
+                ></path>
+                <path
+                  d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                  data-original="#000000"
+                ></path>
+              </svg>
+            </button>
+
+            <h1 class="uppercase text-6xl gelanoMedium">Nima</h1>
+            <div class="flexy flex-col space-y-5">
+              <p class="text-xl">920 E Dixie Ave, Leesburg, FL 34748</p>
+              <a class="text-xl" href="mailto:info@mywellnessstudio.com"
+                >info@MyWellnessStudio.com</a
+              >
+              <a class="text-xl" href="tel:3527280786">(352) 728-0786</a>
+            </div>
+
+            <div class="flex gap-x-4">
+              <a href="javascript:void(0)" class="w-12">
+                <img src="assets/images/ig.png" class="img-fluid" alt="" />
+              </a>
+              <a href="javascript:void(0)" class="w-12">
+                <img src="assets/images/fb.png" class="img-fluid" alt="" />
+              </a>
+              <a href="javascript:void(0)" class="w-12">
+                <img src="assets/images/x.png" class="img-fluid" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-transparent absolute w-full z-[10] flex sm:px-10 px-6 py-3 min-h-[70px]"
+    >
+      <div class="w-full mx-auto">
+        <div class="flex items-center justify-between flex-wrap py-4 px-2">
+          <div class="flex items-center cursor-pointer z-[110]">
+            <a href="index.html" class="w-36">
+              <img src="assets/images/logoWhite.png" class="img-fluid" alt="" />
+            </a>
+          </div>
+
+          <div class="flex items-center space-x-5 text-[#333333]">
+            <a
+              href="javascript:void(0)"
+              class="hidden lg:block uppercase text-lg"
+              >book now</a
+            >
+            <a href="contact-us.html" class="hidden lg:block uppercase text-lg"
+              >contact us</a
+            >
+            <div id="collapseMenu" class="flex">
+              <button
+                class="text-gray-500 w-9 h-9 bg-gray-900/[0.25] rounded-full flexy cursor-pointer"
+                id="open-sidebar"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="#333333"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </button>
+              <button
+                class="absolute top-5 right-4 z-[100] rounded-full w-9 h-9 flex items-center justify-center block cursor-pointer bg-white/[0.25]"
+                style="display: none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-3.5 h-3.5 fill-black"
+                  viewBox="0 0 320.591 320.591"
+                >
+                  <path
+                    d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                    data-original="#000000"
+                  ></path>
+                  <path
+                    d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                    data-original="#000000"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="wrapperrd relative w-full h-full z-[1]">
+      <section class="relative w-full max-lg:h-full lg:h-screen nimaHero z-[1]">
+        <div
+          class="absolute top-0 -z-[1] max-lg:h-full lg:h-screen w-full bg-cover bg-center bg-no-repeat"
+          style="background-image: url('/assets/images/bgMenuWhite.png')"
+        ></div>
+
+        <div
+          class="relative top-0 w-full max-lg:h-full lg:h-screen grid grid-cols-1 lg:grid-cols-2"
+        >
+          <div class="flexy relative w-full h-full max-lg:px-6 max-lg:py-72">
+            <div
+              class="absolute top-0 -z-[1] h-screen w-full bg-cover bg-center bg-no-repeat"
+              style="background-image: url('/assets/images/bgBlue.png')"
+            ></div>
+
+            <div
+              class="itemsStart flex-col space-y-5 w-full text-white lg:w-10/12"
+            >
+              <h3 class="text-2xl">Contact Us</h3>
+              <div class="itemsStart flex-col space-y-2">
+                <h3 class="text-5xl uppercase organetto">Schedule an</h3>
+                <h3 class="text-5xl uppercase organetto">Contact Us</h3>
+              </div>
+              <p class="text-lg lg:w-4/5">
+                Reach out to us now and discover the remarkable transformation
+                our cutting-edge treatments can bring. Immerse yourself in the
+                elevated experience of timeless skin with us at My Wellness
+                Studio.
+              </p>
+              <a
+                href="javascript:void(0)"
+                class="flexy cursor-pointer uppercase py-2 px-8 rounded-full !border-2 border-white"
+              >
+                <span class="relative -top-0.75">virtual consult</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="flexy w-full h-full px-6 sm:px-10">
+            <div class="flex items-center justify-start w-full h-full py-6">
+              <form
+                class="w-full items-center justify-center grid grid-cols-12 gap-6 lg:mt-10"
+              >
+                <div class="col-span-12 lg:col-span-6 space-y-2 w-full">
+                  <label class="font-semibold text-xl">Full Name</label>
+                  <input
+                    type="text"
+                    placeholder="John David..."
+                    class="w-full py-4 pl-4 pr-2 rounded-lg mt-2 !border-2 border-[#333333]"
+                  />
+                </div>
+
+                <div
+                  class="flexStart col-span-12 lg:col-span-6 space-y-3 w-full"
+                >
+                  <label class="font-semibold text-xl">Email</label>
+                  <input
+                    type="email"
+                    placeholder="consult@mail.com"
+                    class="w-full py-4 pl-4 pr-2 mt-2 rounded-lg !border-2 border-[#333333]"
+                  />
+                </div>
+
+                <div
+                  class="flexStart col-span-12 lg:col-span-6 space-y-3 w-full"
+                >
+                  <label class="font-semibold text-xl">Phone</label>
+                  <input
+                    type="tel"
+                    placeholder="+008 654 231"
+                    class="w-full py-4 pl-4 pr-2 mt-2 rounded-lg !border-2 border-[#333333]"
+                  />
+                </div>
+
+                <div
+                  class="flexStart col-span-12 lg:col-span-6 space-y-3 w-full"
+                >
+                  <label class="font-semibold text-xl">Company</label>
+                  <input
+                    type="text"
+                    placeholder="yourcompany.com"
+                    class="w-full py-4 pl-4 pr-2 mt-2 rounded-lg !border-2 border-[#333333]"
+                  />
+                </div>
+
+                <div class="flexStart col-span-12 space-y-3 w-full">
+                  <label class="font-semibold text-xl">Message</label>
+                  <textarea
+                    type="text"
+                    rows="5"
+                    placeholder="yourcompany.com"
+                    class="w-full py-4 pl-4 pr-2 mt-2 rounded-lg !border-2 border-[#333333]"
+                  ></textarea>
+                </div>
+
+                <div class="flexStart space-y-3 col-span-12 lg:col-span-5">
+                  <a
+                    href="javascript:void(0)"
+                    class="flexy cursor-pointer uppercase py-4 px-8 rounded-full !border-2 border-white"
+                  >
+                    <span class="relative -top-0.75 font-semibold"
+                      >Send Message</span
+                    >
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/jquery-3.7.1.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
