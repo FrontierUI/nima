@@ -60,7 +60,7 @@
           </div>
 
           <button
-            id="btnClose"
+            id="btnSMClose"
             class="block lg:!hidden absolute top-10 right-10 z-[100] rounded-full w-9 h-9 flex items-center justify-center block cursor-pointer bg-white/[0.25]"
           >
             <svg
@@ -152,7 +152,7 @@
           <div class="flexy flex-col space-y-8 w-full h-full">
             <button
               id="btnClose"
-              class="absolute lg:top-11 lg:right-16 z-[100] rounded-full w-9 h-9 flex items-center justify-center block cursor-pointer bg-white/[0.25]"
+              class="absolute lg:top-11 lg:right-14 z-[100] rounded-full w-9 h-9 flex items-center justify-center block cursor-pointer bg-white/[0.25]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -889,7 +889,7 @@
           style="background-image: url('/assets/images/consultation.png')"
         ></div>
 
-        <div class="flexy max-w-full w-full h-full relative">
+        <div class="flexy max-w-full w-full h-full relative px-6 text-center">
           <div class="space-y-5 text-white flexy flex-col lg:w-3/4">
             <h1 class="text-5xl lg:text-7xl">VIRTUAL CONSULTATION</h1>
             <p class="text-lg">
@@ -912,9 +912,11 @@
 
         <div class="flexStart flex-col space-y-5 px-6 sm:px-10">
           <div
-            class="flex flex-col items-start justify-start lg:flex-row w-full h-full"
+            class="flex flex-col items-start justify-start lg:flex-row w-full h-full max-lg:space-y-5"
           >
-            <div class="w-full lg:w-1/2 relative flexStart flex-col">
+            <div
+              class="w-full lg:w-1/2 relative flexStart flex-col max-lg:space-y-5"
+            >
               <p class="text-lg lg:w-2/3">
                 My Wellness Studio offers a comprehensive suite of advanced
                 dental, aesthetic, and wellness treatments, tailored to enhance
@@ -962,7 +964,9 @@
                 </ul>
               </div>
 
-              <div class="flexStart flex-col importLinks space-y-4">
+              <div
+                class="flexStart flex-col importLinks max-lg:space-y-5 space-y-4"
+              >
                 <p class="text-xl">Contact Us</p>
                 <ul class="flexStart flex-col space-y-2">
                   <li>
@@ -978,10 +982,13 @@
                   </li>
                 </ul>
 
-                <a class="absolute lg:right-0 lg:-bottom-10" href="/">
+                <a
+                  class="absolute max-lg:-bottom-[5rem] lg:right-0 lg:-bottom-10 max-lg:py-5"
+                  href="index.html"
+                >
                   <img
                     src="assets/images/logoGrad.png"
-                    class="img-fluid w-56"
+                    class="img-fluid w-36 lg:w-56"
                     alt=""
                   />
                 </a>
@@ -990,7 +997,7 @@
           </div>
 
           <div
-            class="py-4 relative lg:top-10 flex items-center justify-start flex-col lg:justify-between lg:flex-row"
+            class="py-4 max-lg:pt-10 relative lg:top-10 flex items-center justify-start flex-col lg:justify-between lg:flex-row"
           >
             <p class="text-md">© 2025 NIMA.com, All Rights Reserved.</p>
 
@@ -1007,44 +1014,5 @@
     <script src="assets/js/slick.min.js"></script>
 
     <script src="assets/js/main.js"></script>
-
-    <script>
-      const sidebar = document.getElementById('sidebar');
-      const openSidebarButton = document.getElementById('open-sidebar');
-      const collapseMenu = document.getElementById('collapseMenu');
-
-      openSidebarButton.addEventListener('click', (e) => {
-        e.stopPropagation();
-        sidebar.classList.toggle('-translate-x-full');
-        setTimeout(() => {
-          document.querySelector('body').classList.add('overflow-hidden');
-        }, 50);
-      });
-
-      collapseMenu.addEventListener('click', (e) => {
-        e.stopPropagation();
-        sidebar.classList.toggle('-translate-x-full');
-      });
-
-      document.addEventListener('click', (e) => {
-        if (
-          !sidebar.contains(e.target) &&
-          !openSidebarButton.contains(e.target)
-        ) {
-          sidebar.classList.add('-translate-x-full');
-        }
-      });
-
-      document.addEventListener('click', (e) => {
-        if (!sidebar.contains(e.target) && !collapseMenu.contains(e.target)) {
-          sidebar.classList.add('-translate-x-full');
-        }
-      });
-
-      document.getElementById('btnClose').addEventListener('click', () => {
-        sidebar.classList.add('-translate-x-full');
-        document.querySelector('body').classList.remove('overflow-hidden');
-      });
-    </script>
   </body>
 </html>
