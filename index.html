@@ -30,6 +30,40 @@
       #open-sidebar:hover {
         fill: white;
       }
+
+      .testiSlide {
+        width: 100%;
+      }
+
+      .testiSlide img {
+        filter: grayscale(100%);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: transform;
+        transition-duration: 0.5s ease-in-out;
+      }
+
+      .testiSlide.slick-center img {
+        transform: scale(1.4);
+        filter: grayscale(0);
+      }
+
+      .testiSlide .content {
+        display: none;
+        overflow: hidden;
+      }
+      .testiSlide.slick-center .content {
+        display: block;
+        width: 100%;
+      }
+
+      @media screen and (min-width: 1024px) {
+        .testiSlide.slick-center .content {
+          width: 100% !important;
+        }
+        .testiSlide.slick-center .content p {
+          width: 100% !important;
+        }
+      }
     </style>
   </head>
 
@@ -569,7 +603,7 @@
           </div>
 
           <div class="treatSlider py-6 px-6 sm:px-10">
-            <div class="slicky sliderCont mx-2.5 rounded-xl">
+            <div class="slicky sliderCont mx-2.5 rounded-xl !block">
               <img src="assets/images/diamond.png" class="img-fluid" alt="" />
               <div
                 class="absolute bottom-5 left-8 organetto flex flex-col text-white uppercase"
@@ -580,7 +614,7 @@
               <div class="sliderContent rounded-xl"></div>
             </div>
 
-            <div class="slicky sliderCont mx-2.5 rounded-xl">
+            <div class="slicky sliderCont mx-2.5 rounded-xl !block">
               <img src="assets/images/exion.png" class="img-fluid" alt="" />
               <div
                 class="absolute bottom-5 left-8 organetto flex flex-col text-white uppercase"
@@ -590,7 +624,7 @@
               <div class="sliderContent rounded-xl"></div>
             </div>
 
-            <div class="slicky sliderCont mx-2.5 rounded-xl">
+            <div class="slicky sliderCont mx-2.5 rounded-xl !block">
               <img src="assets/images/emance.png" class="img-fluid" alt="" />
               <div
                 class="absolute bottom-5 left-8 organetto flex flex-col text-white uppercase"
@@ -600,7 +634,7 @@
               <div class="sliderContent rounded-xl"></div>
             </div>
 
-            <div class="slicky sliderCont mx-2.5 rounded-xl">
+            <div class="slicky sliderCont mx-2.5 rounded-xl !block">
               <img src="assets/images/exion.png" class="img-fluid" alt="" />
               <div
                 class="absolute bottom-5 left-8 organetto flex flex-col text-white uppercase"
@@ -721,7 +755,7 @@
                 class="img-fluid"
                 alt=""
               />
-              <div class="absolute p-4 rounded-full hoverOp0">
+              <div class="absolute p-4 max-lg:mt-12 rounded-full hoverOp0">
                 <h2 class="organetto text-3xl">
                   HOLISTIC APPROACH TO WELLNESS AND BEAUTY
                 </h2>
@@ -876,10 +910,196 @@
           style="background-image: url('/assets/images/fullbgBlue.png')"
         ></div>
 
-        <div class="flexy flex-col relative w-full h-full text-white">
-          <h1 class="text-5xl lg:text-6xl organetto uppercase">
-            happy clients
-          </h1>
+        <div
+          class="block items-center justify-center flex-col relative w-full text-white"
+        >
+          <hr
+            class="hidden lg:block absolute top-24 !h-[2px] w-full bg-white"
+          />
+          <div class="flexy text-center py-6 px-6">
+            <h1 class="text-5xl lg:text-6xl organetto uppercase">
+              happy clients
+            </h1>
+          </div>
+
+          <div class="py-10">
+            <div class="testimonialSlider">
+              <div class="text-center testiSlide">
+                <img
+                  src="assets/images/testi1.png"
+                  class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                />
+                <div
+                  class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                >
+                  <div class="flexy gap-x-2">
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                  </div>
+                  <p class="text-md">
+                    I was skeptical about online puppy listings, but Pups4Sale
+                    made the process incredibly safe and easy. Their verified
+                    breeders gave me peace of mind, and now Max, my Golden
+                    Retriever, is my best companion!
+                  </p>
+                  <p class="text-xl font-bold">Samantha, Brisbane</p>
+                </div>
+              </div>
+
+              <div class="text-center testiSlide">
+                <img
+                  src="assets/images/testi2.png"
+                  class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                />
+                <div
+                  class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                >
+                  <div class="flexy gap-x-2">
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                  </div>
+                  <p class="text-md">
+                    I was skeptical about online puppy listings, but Pups4Sale
+                    made the process incredibly safe and easy. Their verified
+                    breeders gave me peace of mind, and now Max, my Golden
+                    Retriever, is my best companion!
+                  </p>
+                  <p class="text-xl font-bold">Samantha, Brisbane</p>
+                </div>
+              </div>
+
+              <div class="text-center testiSlide">
+                <img
+                  src="assets/images/testi3.png"
+                  class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                />
+                <div
+                  class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                >
+                  <div class="flexy gap-x-2">
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                  </div>
+                  <p class="text-md">
+                    I was skeptical about online puppy listings, but Pups4Sale
+                    made the process incredibly safe and easy. Their verified
+                    breeders gave me peace of mind, and now Max, my Golden
+                    Retriever, is my best companion!
+                  </p>
+                  <p class="text-xl font-bold">Samantha, Brisbane</p>
+                </div>
+              </div>
+
+              <div class="text-center testiSlide">
+                <img
+                  src="assets/images/testi4.png"
+                  class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                />
+                <div
+                  class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                >
+                  <div class="flexy gap-x-2">
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                  </div>
+                  <p class="text-md">
+                    I was skeptical about online puppy listings, but Pups4Sale
+                    made the process incredibly safe and easy. Their verified
+                    breeders gave me peace of mind, and now Max, my Golden
+                    Retriever, is my best companion!
+                  </p>
+                  <p class="text-xl font-bold">Samantha, Brisbane</p>
+                </div>
+              </div>
+
+              <div class="text-center testiSlide">
+                <img
+                  src="assets/images/testi5.png"
+                  class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                />
+                <div
+                  class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                >
+                  <div class="flexy gap-x-2">
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                  </div>
+                  <p class="text-md">
+                    I was skeptical about online puppy listings, but Pups4Sale
+                    made the process incredibly safe and easy. Their verified
+                    breeders gave me peace of mind, and now Max, my Golden
+                    Retriever, is my best companion!
+                  </p>
+                  <p class="text-xl font-bold">Samantha, Brisbane</p>
+                </div>
+              </div>
+
+              <div class="text-center testiSlide">
+                <img
+                  src="assets/images/testi6.png"
+                  class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                />
+                <div
+                  class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                >
+                  <div class="flexy gap-x-2">
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                  </div>
+                  <p class="text-md">
+                    I was skeptical about online puppy listings, but Pups4Sale
+                    made the process incredibly safe and easy. Their verified
+                    breeders gave me peace of mind, and now Max, my Golden
+                    Retriever, is my best companion!
+                  </p>
+                  <p class="text-xl font-bold">Samantha, Brisbane</p>
+                </div>
+              </div>
+
+              <div class="text-center testiSlide">
+                <img
+                  src="assets/images/testi7.png"
+                  class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                />
+                <div
+                  class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                >
+                  <div class="flexy gap-x-2">
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                  </div>
+                  <p class="text-md">
+                    I was skeptical about online puppy listings, but Pups4Sale
+                    made the process incredibly safe and easy. Their verified
+                    breeders gave me peace of mind, and now Max, my Golden
+                    Retriever, is my best companion!
+                  </p>
+                  <p class="text-xl font-bold">Samantha, Brisbane</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -924,7 +1144,7 @@
                 personalized manner.
               </p>
 
-              <div class="flex gap-x-3 relative lg:top-20">
+              <div class="flex gap-x-3 relative lg:top-[7.5rem]">
                 <a href="javascript:void(0)" class="w-12">
                   <img src="assets/images/ig.png" class="img-fluid" alt="" />
                 </a>
