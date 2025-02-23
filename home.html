@@ -20,6 +20,7 @@
     <link href="assets/css/globals.css" rel="stylesheet" />
 
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
     <style>
       #btnClose:hover,
       #open-sidebar:hover {
@@ -49,7 +50,7 @@
             style="background-image: url('/assets/images/halfBlack.png')"
           ></div>
 
-          <div class="flexStart w-56 pl-4 sm:pl-10 pt-4 sm:pt-12">
+          <div class="flexStart w-56 pl-6 sm:pl-10 pt-8">
             <a href="index.html" class="">
               <img
                 src="assets/images/logoWhite.png"
@@ -59,27 +60,28 @@
             </a>
           </div>
 
-          <button
-            id="btnClose"
-            class="block lg:!hidden absolute top-10 right-10 z-[100] rounded-full w-9 h-9 flex items-center justify-center block cursor-pointer bg-white/[0.25]"
+          <div
+            class="absolute block lg:!hidden top-10 right-9 z-[100] rounded-full w-9 h-9 flex items-center justify-center block cursor-pointer bg-white/[0.25]"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-3.5 h-3.5 fill-black"
-              viewBox="0 0 320.591 320.591"
-            >
-              <path
-                d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
-                data-original="#000000"
-              ></path>
-              <path
-                d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
-                data-original="#000000"
-              ></path>
-            </svg>
-          </button>
+            <button id="btnClose" class="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-3.5 h-3.5 fill-black"
+                viewBox="0 0 320.591 320.591"
+              >
+                <path
+                  d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                  data-original="#000000"
+                ></path>
+                <path
+                  d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                  data-original="#000000"
+                ></path>
+              </svg>
+            </button>
+          </div>
 
-          <div class="flexy relative max-lg:-mt-40 lg:-mt-28 w-full h-full">
+          <div class="flexy relative lg:-mt-20 w-full h-full">
             <ul
               class="flex justify-center list-disc flex-col space-y-5 min-w-72"
             >
@@ -150,25 +152,26 @@
 
         <div class="!hidden flexy flex-col w-full h-screen lg:!block">
           <div class="flexy flex-col space-y-8 w-full h-full">
-            <button
-              id="btnClose"
-              class="absolute lg:top-11 lg:right-16 z-[100] rounded-full w-9 h-9 flex items-center justify-center block cursor-pointer bg-white/[0.25]"
+            <div
+              class="absolute !hidden lg:!block lg:top-11 lg:right-12 z-[100] rounded-full w-10 h-10 flex items-center justify-center cursor-pointer bg-white/[0.25]"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-3.5 h-3.5 fill-black"
-                viewBox="0 0 320.591 320.591"
-              >
-                <path
-                  d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
-                  data-original="#000000"
-                ></path>
-                <path
-                  d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
-                  data-original="#000000"
-                ></path>
-              </svg>
-            </button>
+              <button id="btnClose" class="rounded-full cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-3.5 h-3.5 fill-black"
+                  viewBox="0 0 320.591 320.591"
+                >
+                  <path
+                    d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                    data-original="#000000"
+                  ></path>
+                  <path
+                    d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                    data-original="#000000"
+                  ></path>
+                </svg>
+              </button>
+            </div>
 
             <h1 class="uppercase text-6xl gelanoMedium">Nima</h1>
             <div class="flexy flex-col space-y-5">
@@ -246,6 +249,7 @@
                       ></path>
                     </svg>
                   </button>
+
                   <button
                     class="absolute top-5 right-4 z-[100] rounded-full w-9 h-9 flex items-center justify-center block cursor-pointer bg-white/[0.25]"
                     style="display: none"
@@ -340,7 +344,7 @@
               <h1 class="text-5xl organetto uppercase">our</h1>
               <h1 class="text-5xl organetto uppercase">services</h1>
               <hr
-                class="!bg-[#333333] !hidden lg:!block !h-[2px] !w-[81%] absolute bottom-3 right-0"
+                class="!bg-[#333333] !h-[2px] !w-[81%] absolute bottom-3 right-0"
               />
             </div>
           </div>
@@ -467,10 +471,10 @@
           ></div>
 
           <div
-            class="!w-full lg:!w-[50%] h-screen flexy absolute top-0 right-0 bg-center bg-cover bg-no-repeat !border-0 !outline-none"
+            class="max-w-full lg:max-w-[50%] w-full h-screen flexy absolute top-0 right-0 bg-center bg-cover bg-no-repeat !border-0 !outline-none"
             style="background-image: url('/assets/images/bgBlue.png')"
           >
-            <div class="itemsStart w-full flex-col relative lg:left-40 px-6">
+            <div class="itemsStart flex-col relative lg:left-40 px-6">
               <hr class="absolute left-2 top-2 !h-32 w-[2px] bg-white" />
               <div class="itemsStart flex-col space-y-5 text-white">
                 <div class="justCenter flex-col uppercase text-5xl organetto">
@@ -479,12 +483,12 @@
                   <h1>to age?</h1>
                 </div>
 
-                <div class="justCenter w-full lg:w-3/5">
+                <div class="justCenter w-3/5">
                   <p class="text-xl">
                     YOUR PARTNER IN Aesthetics &amp; WELLNESS IN LEESBURG, FL
                   </p>
                 </div>
-                <div class="justCenter w-full lg:w-3/5">
+                <div class="justCenter w-3/5">
                   <p class="tex-md">
                     At My Wellness Studio, we redefine the standards of beauty
                     and wellness by offering an unparalleled blend of innovative
@@ -518,7 +522,7 @@
                   <h1>for you</h1>
                 </div>
 
-                <div class="justCenter w-full lg:w-3/5">
+                <div class="justCenter w-3/5">
                   <p class="tex-md">
                     Our approach to aesthetics is refined, personalized, and
                     focused on enhancing your natural beauty. We provide
@@ -532,7 +536,7 @@
                   </p>
                 </div>
 
-                <div class="flexStart">
+                <div class="itemsStart w-3/5">
                   <a
                     href="javascript:void(0)"
                     class="flexy cursor-pointer uppercase py-2 px-5 rounded-full !border-2 border-white"
@@ -557,59 +561,18 @@
           style="background-image: url('/assets/images/bgMenuWhite.png')"
         ></div>
 
-        <div class="w-full block flex-col space-y-5 lg:space-y-8">
+        <div class="w-full block flex-col space-y-8">
           <div class="justCenter w-full relative pl-6 sm:pl-10 gap-x-4">
             <div class="justCenter flex-col w-full">
               <h1 class="text-5xl organetto uppercase">Aesthetic</h1>
               <h1 class="text-5xl organetto uppercase">Treatments</h1>
               <hr
-                class="!bg-[#333333] !hidden lg:!block !h-[2px] !w-[75%] absolute bottom-3 right-0"
+                class="!bg-[#333333] !h-[2px] !w-[75%] absolute bottom-3 right-0"
               />
             </div>
           </div>
 
-          <div class="treatSlider py-6 px-6 sm:px-10">
-            <div class="slicky sliderCont mx-2.5 rounded-xl">
-              <img src="assets/images/diamond.png" class="img-fluid" alt="" />
-              <div
-                class="absolute bottom-5 left-8 organetto flex flex-col text-white uppercase"
-              >
-                <h1 class="text-4xl lg:text-5xl">diamond</h1>
-                <h1 class="text-4xl lg:text-5xl">glow</h1>
-              </div>
-              <div class="sliderContent rounded-xl"></div>
-            </div>
-
-            <div class="slicky sliderCont mx-2.5 rounded-xl">
-              <img src="assets/images/exion.png" class="img-fluid" alt="" />
-              <div
-                class="absolute bottom-5 left-8 organetto flex flex-col text-white uppercase"
-              >
-                <h1 class="text-4xl lg:text-5xl">exion rf</h1>
-              </div>
-              <div class="sliderContent rounded-xl"></div>
-            </div>
-
-            <div class="slicky sliderCont mx-2.5 rounded-xl">
-              <img src="assets/images/emance.png" class="img-fluid" alt="" />
-              <div
-                class="absolute bottom-5 left-8 organetto flex flex-col text-white uppercase"
-              >
-                <h1 class="text-4xl lg:text-5xl">emface</h1>
-              </div>
-              <div class="sliderContent rounded-xl"></div>
-            </div>
-
-            <div class="slicky sliderCont mx-2.5 rounded-xl">
-              <img src="assets/images/exion.png" class="img-fluid" alt="" />
-              <div
-                class="absolute bottom-5 left-8 organetto flex flex-col text-white uppercase"
-              >
-                <h1 class="text-4xl lg:text-5xl">exion rf</h1>
-              </div>
-              <div class="sliderContent rounded-xl"></div>
-            </div>
-          </div>
+          <div class="treatSlider py-6 px-6 sm:px-10"></div>
         </div>
       </section>
 
@@ -627,9 +590,7 @@
           class="flexy w-full flex-col px-6 text-center text-white space-y-5 sm:px-10"
         >
           <div class="relative flexy flex-col w-full lg:w-3/5">
-            <div
-              class="flexy flex-col uppercase organetto relative max-lg:pt-8"
-            >
+            <div class="flexy flex-col uppercase organetto">
               <h1 class="text-5xl lg:text-7xl">My Wellness</h1>
               <h1 class="text-5xl lg:text-7xl">Studio Difference</h1>
             </div>
@@ -652,60 +613,12 @@
                 class="img-fluid"
                 alt=""
               />
-              <div class="absolute p-4 max-lg:mt-12 rounded-full hoverOp0">
+              <div class="absolute p-4 rounded-full hoverOp0">
                 <h2 class="organetto text-3xl">
                   HOLISTIC APPROACH TO WELLNESS AND BEAUTY
                 </h2>
               </div>
-              <div
-                class="text-white absolute p-4 max-lg:mt-8 rounded-full studioContent"
-              >
-                <p class="text-md">
-                  Leveraging the latest in aesthetic technologies, My Wellness
-                  Studio stands out by offering cutting-edge treatments to our
-                  clients with access to the newest and most effective solutions
-                  for their beauty and health needs.
-                </p>
-              </div>
-            </div>
-
-            <div class="w-full flexy relative studioCont">
-              <img
-                src="assets/images/circleBlue.png"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="absolute p-4 max-lg:mt-12 rounded-full hoverOp0">
-                <h2 class="organetto text-3xl">
-                  HOLISTIC APPROACH TO WELLNESS AND BEAUTY
-                </h2>
-              </div>
-              <div
-                class="text-white absolute p-4 max-lg:mt-8 rounded-full studioContent"
-              >
-                <p class="text-md">
-                  Leveraging the latest in aesthetic technologies, My Wellness
-                  Studio stands out by offering cutting-edge treatments to our
-                  clients with access to the newest and most effective solutions
-                  for their beauty and health needs.
-                </p>
-              </div>
-            </div>
-
-            <div class="w-full flexy relative studioCont">
-              <img
-                src="assets/images/circleBlue.png"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="absolute p-4 max-lg:mt-12 rounded-full hoverOp0">
-                <h2 class="organetto text-3xl">
-                  HOLISTIC APPROACH TO WELLNESS AND BEAUTY
-                </h2>
-              </div>
-              <div
-                class="text-white absolute p-4 max-lg:mt-8 rounded-full studioContent"
-              >
+              <div class="text-white absolute p-4 rounded-full studioContent">
                 <p class="text-md">
                   Leveraging the latest in aesthetic technologies, My Wellness
                   Studio stands out by offering cutting-edge treatments to our
@@ -726,9 +639,49 @@
                   HOLISTIC APPROACH TO WELLNESS AND BEAUTY
                 </h2>
               </div>
-              <div
-                class="text-white absolute p-4 max-lg:mt-8 rounded-full studioContent"
-              >
+              <div class="text-white absolute p-4 rounded-full studioContent">
+                <p class="text-md">
+                  Leveraging the latest in aesthetic technologies, My Wellness
+                  Studio stands out by offering cutting-edge treatments to our
+                  clients with access to the newest and most effective solutions
+                  for their beauty and health needs.
+                </p>
+              </div>
+            </div>
+
+            <div class="w-full flexy relative studioCont">
+              <img
+                src="assets/images/circleBlue.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="absolute p-4 rounded-full hoverOp0">
+                <h2 class="organetto text-3xl">
+                  HOLISTIC APPROACH TO WELLNESS AND BEAUTY
+                </h2>
+              </div>
+              <div class="text-white absolute p-4 rounded-full studioContent">
+                <p class="text-md">
+                  Leveraging the latest in aesthetic technologies, My Wellness
+                  Studio stands out by offering cutting-edge treatments to our
+                  clients with access to the newest and most effective solutions
+                  for their beauty and health needs.
+                </p>
+              </div>
+            </div>
+
+            <div class="w-full flexy relative studioCont">
+              <img
+                src="assets/images/circleBlue.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="absolute p-4 rounded-full hoverOp0">
+                <h2 class="organetto text-3xl">
+                  HOLISTIC APPROACH TO WELLNESS AND BEAUTY
+                </h2>
+              </div>
+              <div class="text-white absolute p-4 rounded-full studioContent">
                 <p class="text-md">
                   Leveraging the latest in aesthetic technologies, My Wellness
                   Studio stands out by offering cutting-edge treatments to our
@@ -764,7 +717,7 @@
                   <h1>dhanani</h1>
                 </div>
 
-                <div class="justCenter flex-col space-y-1 w-full lg:w-3/5">
+                <div class="justCenter flex-col space-y-1 w-3/5">
                   <p class="tex-md">
                     Dr. Dhanani has had a passion for dentistry and helping
                     people optimize their overall health through their dental
@@ -810,7 +763,7 @@
         />
 
         <div class="flex flex-col space-y-6 w-full py-6 lg:py-10 px-6 sm:px-10">
-          <div class="flexy flex-col text-center space-y-0 text-[#333333]">
+          <div class="flexy flex-col space-y-0 text-[#333333]">
             <h1 class="uppercase organetto text-5xl lg:text-6xl">
               condition we treat
             </h1>
@@ -819,54 +772,7 @@
             </p>
           </div>
 
-          <div class="conditionSlider mt-6 pt-6">
-            <div class="slicky sliderCont mx-2.5 rounded-xl">
-              <img src="assets/images/acne.png" class="img-fluid" alt="" />
-              <div
-                class="absolute bottom-5 left-8 organetto flex flex-col text-white uppercase"
-              >
-                <h1 class="text-5xl">acne and</h1>
-                <h1 class="text-5xl">acne scar</h1>
-              </div>
-              <div class="sliderContent rounded-xl"></div>
-            </div>
-
-            <div class="slicky sliderCont mx-2.5 rounded-xl">
-              <img src="assets/images/uninary.png" class="img-fluid" alt="" />
-              <div
-                class="absolute bottom-5 left-8 organetto flex flex-col text-white uppercase"
-              >
-                <h1 class="text-5xl">uninary</h1>
-                <h1 class="text-5xl">incontinence</h1>
-              </div>
-              <div class="sliderContent rounded-xl"></div>
-            </div>
-
-            <div class="slicky sliderCont mx-2.5 rounded-xl">
-              <img
-                src="assets/images/pimentation.png"
-                class="img-fluid"
-                alt=""
-              />
-              <div
-                class="absolute bottom-5 left-8 organetto flex flex-col text-white uppercase"
-              >
-                <h1 class="text-5xl">pigmentation</h1>
-              </div>
-              <div class="sliderContent rounded-xl"></div>
-            </div>
-
-            <div class="slicky sliderCont mx-2.5 rounded-xl">
-              <img src="assets/images/uninary.png" class="img-fluid" alt="" />
-              <div
-                class="absolute bottom-5 left-8 organetto flex flex-col text-white uppercase"
-              >
-                <h1 class="text-5xl">uninary</h1>
-                <h1 class="text-5xl">incontinence</h1>
-              </div>
-              <div class="sliderContent rounded-xl"></div>
-            </div>
-          </div>
+          <div class="conditionSlider mt-6 pt-6"></div>
         </div>
       </section>
 
@@ -1005,7 +911,6 @@
 
     <script src="assets/js/jquery-3.7.1.js"></script>
     <script src="assets/js/slick.min.js"></script>
-
     <script src="assets/js/main.js"></script>
 
     <script>
