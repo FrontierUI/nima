@@ -72,7 +72,7 @@
         cursor: pointer;
         width: 100%;
         height: 500px;
-        perspective: 1500px;
+        perspective: 1000px;
       }
       .flipCard {
         width: 100%;
@@ -93,6 +93,38 @@
         overflow: hidden;
       }
       .flipCard .flipBack {
+        background: linear-gradient(to bottom, #3498db, #00d2ff);
+        color: #fff;
+        transform: rotateY(180deg);
+      }
+
+      .duranceCard {
+        z-index: 2;
+        position: relative;
+        cursor: pointer;
+        width: 100%;
+        height: 500px;
+        perspective: 1000px;
+      }
+      .duranceFlipCard {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease-in-out;
+      }
+      .duranceFlipCard:hover {
+        transform: rotateY(180deg);
+      }
+      .duranceFlipCard .duranceSide {
+        backface-visibility: hidden;
+        border-radius: 1rem;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+      }
+      .duranceFlipCard .duranceBack {
         background: linear-gradient(to bottom, #3498db, #00d2ff);
         color: #fff;
         transform: rotateY(180deg);
@@ -439,6 +471,171 @@
           class="absolute top-0 -z-[1] h-full w-full bg-cover bg-center bg-no-repeat"
           style="background-image: url('/assets/images/bgMenuWhite.png')"
         ></div>
+
+        <div class="flexy flex-col space-y-8 w-full">
+          <div class="justCenter w-full relative pl-6 sm:pl-10 gap-x-4">
+            <div class="justCenter flex-col w-full">
+              <h1 class="text-5xl montSemibold uppercase">men</h1>
+              <h1 class="text-5xl montLight uppercase">durance</h1>
+              <hr
+                class="!bg-[#333333] !hidden lg:!block !h-[1px] !w-[80%] absolute bottom-2 right-0"
+              />
+            </div>
+          </div>
+
+          <div
+            class="w-full grid grid-cols-1 lg:grid-cols-3 gap-5 px-6 sm:px-10"
+          >
+            <div class="duranceCard">
+              <div class="duranceFlipCard">
+                <div class="duranceSide">
+                  <img
+                    src="assets/images/therpy.png"
+                    class="img-fluid"
+                    alt="Jimmy Eat World"
+                  />
+
+                  <div
+                    class="absolute bottom-6 left-6 itemsStart flex-col text-3xl lg:text-5xl text-white uppercase montSemibold w-full"
+                  >
+                    <h2>hormone</h2>
+                    <h2>replacement</h2>
+                    <h2>therapy</h2>
+                  </div>
+                </div>
+                <div
+                  class="duranceSide duranceBack p-8 justCenter flex-col space-y-7"
+                >
+                  <div
+                    class="justCenter flex-col space-y-1 text-3xl lg:text-4xl text-white uppercase montSemibold"
+                  >
+                    <h2>hormone</h2>
+                    <h2>replacement</h2>
+                    <h2>therapy</h2>
+                  </div>
+                  <ul class="justCenter flex-col space-y-1">
+                    <li class="justCenter">
+                      <span class="text-xl montMedium"
+                        >Erectile dysfunction</span
+                      >
+                    </li>
+                    <li class="justCenter">
+                      <span class="text-xl montMedium">P-Shot</span>
+                    </li>
+                    <li class="justCenter">
+                      <span class="text-xl montMedium">Peptide Therapy</span>
+                    </li>
+                    <li class="justCenter">
+                      <span class="text-xl montMedium"
+                        >Shockwave Treatments</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="duranceCard">
+              <div class="duranceFlipCard">
+                <div class="duranceSide">
+                  <img
+                    src="assets/images/solution.png"
+                    class="img-fluid"
+                    alt="Jimmy Eat World"
+                  />
+
+                  <div
+                    class="absolute bottom-6 left-6 itemsStart flex-col text-3xl lg:text-5xl text-white uppercase montSemibold w-full"
+                  >
+                    <h2>Sexual</h2>
+                    <h2>health +</h2>
+                    <h2>Regenerative</h2>
+                    <h2>solution</h2>
+                  </div>
+                </div>
+                <div
+                  class="duranceSide duranceBack p-8 justCenter flex-col space-y-7"
+                >
+                  <div
+                    class="justCenter flex-col space-y-1 text-3xl lg:text-4xl text-white uppercase montSemibold"
+                  >
+                    <h2>Sexual</h2>
+                    <h2>health +</h2>
+                    <h2>Regenerative</h2>
+                    <h2>solution</h2>
+                  </div>
+                  <ul class="justCenter flex-col space-y-1">
+                    <li class="justCenter">
+                      <span class="text-xl montMedium"
+                        >Erectile dysfunction</span
+                      >
+                    </li>
+                    <li class="justCenter">
+                      <span class="text-xl montMedium">P-Shot</span>
+                    </li>
+                    <li class="justCenter">
+                      <span class="text-xl montMedium">Peptide Therapy</span>
+                    </li>
+                    <li class="justCenter">
+                      <span class="text-xl montMedium"
+                        >Shockwave Treatments</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="duranceCard">
+              <div class="duranceFlipCard">
+                <div class="duranceSide">
+                  <img
+                    src="assets/images/ageManage.png"
+                    class="img-fluid"
+                    alt="Jimmy Eat World"
+                  />
+
+                  <div
+                    class="absolute bottom-6 left-6 itemsStart flex-col text-3xl lg:text-5xl text-white uppercase montSemibold w-full"
+                  >
+                    <h2>Age</h2>
+                    <h2>management</h2>
+                    <h2>+ wellness</h2>
+                  </div>
+                </div>
+                <div
+                  class="duranceSide duranceBack p-8 justCenter flex-col space-y-7"
+                >
+                  <div
+                    class="justCenter flex-col space-y-1 text-3xl lg:text-4xl text-white uppercase montSemibold"
+                  >
+                    <h2>Age</h2>
+                    <h2>management</h2>
+                    <h2>+ wellness</h2>
+                  </div>
+                  <ul class="justCenter flex-col space-y-1">
+                    <li class="justCenter">
+                      <span class="text-xl montMedium"
+                        >Erectile dysfunction</span
+                      >
+                    </li>
+                    <li class="justCenter">
+                      <span class="text-xl montMedium">P-Shot</span>
+                    </li>
+                    <li class="justCenter">
+                      <span class="text-xl montMedium">Peptide Therapy</span>
+                    </li>
+                    <li class="justCenter">
+                      <span class="text-xl montMedium"
+                        >Shockwave Treatments</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="relative w-full h-full services z-[1] py-6 lg:py-10">
@@ -458,136 +655,246 @@
             </div>
           </div>
 
-          <div
-            class="w-full h-full flex items-center justify-center px-6 sm:px-10 gap-5 pb-5"
-          >
-            <div class="stayCard">
-              <div class="flipCard">
-                <div class="flipSide">
-                  <img
-                    src="assets/images/brownhair.png"
-                    class="img-fluid rounded-xl"
-                    alt="Jimmy Eat World"
-                  />
-                  <div
-                    class="absolute top-6 left-6 p-4 w-20 h-20 rounded-full text-white text-3xl montSemibold bg-gradient-to-b from-[#3498DB] to-[#00D2FF] flexy"
-                  >
-                    30s
-                  </div>
-                  <div
-                    class="absolute bottom-6 left-6 itemsStart flex-col text-3xl lg:text-5xl text-white uppercase montSemibold w-full"
-                  >
-                    <h2>Stay</h2>
-                    <h2>snatched</h2>
-                  </div>
-                </div>
-                <div
-                  class="flipSide flipBack p-8 itemsStart flex-col space-y-7"
-                >
-                  <div
-                    class="justCenter flex-col space-y-1 text-3xl lg:text-5xl text-white uppercase montSemibold"
-                  >
-                    <h2>Stay</h2>
-                    <h2>snatched</h2>
-                  </div>
-
-                  <ul class="justCenter flex-col space-y-1">
-                    <li class="justCenter">
-                      <span class="text-xl montMedium">Neurotoxins</span>
-                    </li>
-                    <li class="justCenter">
-                      <span class="text-xl montMedium">Botox</span>
-                    </li>
-                    <li class="justCenter">
-                      <span class="text-xl montMedium">Facial Fillers</span>
-                    </li>
-                    <li class="justCenter">
-                      <span class="text-xl montMedium">Body Sculpting</span>
-                    </li>
-                    <li class="justCenter">
-                      <span class="text-xl montMedium">Weight Loss</span>
-                    </li>
-                    <li class="justCenter">
-                      <span class="text-xl montMedium">Tirzepatide</span>
-                    </li>
-                    <li class="justCenter">
-                      <span class="text-xl montMedium">Semaglutide</span>
-                    </li>
-                    <li class="justCenter">
-                      <span class="text-xl montMedium">Hormone Therapy</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="relative w-full h-full lg:max-h-[500px] rounded-xl servicesCont"
-            >
-              <img
-                src="assets/images/oldWhitewoman.png"
-                class="img-fluid rounded-xl"
-                alt=""
-              />
-
-              <div class="serviceContent rounded-xl">
-                <div
-                  class="absolute itemsStart flex-col left-4 bottom-4 w-full text-white space-y-3"
-                >
-                  <div class="w-4/5">
-                    <h1 class="organetto text-5xl">
-                      Rediscover Youthful Radiance
-                    </h1>
-                  </div>
-
-                  <div class="w-11/12 itemsStart flex-col space-y-3">
-                    <p>
-                      Experience transformative treatments that rewind the
-                      effects of time, leaving you with a visibly younger and
-                      revitalized appearance.
-                    </p>
-                    <a
-                      href="javascript:void(0)"
-                      class="flexy cursor-pointer uppercase py-2 px-5 rounded-full !border-2 border-white"
+          <div class="w-full h-full relative px-6 sm:px-10 pb-5">
+            <div class="empowherSlider w-full h-full">
+              <div class="stayCard mx-3">
+                <div class="flipCard">
+                  <div class="flipSide">
+                    <img
+                      src="assets/images/brownhair.png"
+                      class="img-fluid rounded-xl"
+                      alt="Jimmy Eat World"
+                    />
+                    <div
+                      class="absolute top-6 left-6 p-4 w-20 h-20 rounded-full text-white text-3xl montSemibold bg-gradient-to-b from-[#3498DB] to-[#00D2FF] flexy"
                     >
-                      <span class="relative -top-0.75">learn more</span>
-                    </a>
+                      30s
+                    </div>
+                    <div
+                      class="absolute bottom-6 left-6 itemsStart flex-col text-3xl lg:text-5xl text-white uppercase montSemibold w-full"
+                    >
+                      <h2>Stay</h2>
+                      <h2>snatched</h2>
+                    </div>
+                  </div>
+                  <div
+                    class="flipSide flipBack p-8 itemsStart flex-col space-y-7"
+                  >
+                    <div
+                      class="justCenter flex-col space-y-1 text-3xl lg:text-5xl text-white uppercase montSemibold"
+                    >
+                      <h2>Stay</h2>
+                      <h2>snatched</h2>
+                    </div>
+
+                    <ul class="justCenter flex-col space-y-1">
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Neurotoxins</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Botox</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Facial Fillers</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Body Sculpting</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Weight Loss</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Tirzepatide</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Semaglutide</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Hormone Therapy</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div
-              class="relative w-full h-full lg:max-h-[500px] rounded-xl servicesCont"
-            >
-              <img
-                src="assets/images/blck.png"
-                class="img-fluid rounded-xl"
-                alt=""
-              />
-
-              <div class="serviceContent rounded-xl">
-                <div
-                  class="absolute itemsStart flex-col left-4 bottom-4 w-full text-white space-y-3"
-                >
-                  <div class="w-4/5">
-                    <h1 class="organetto text-5xl">
-                      Rediscover Youthful Radiance
-                    </h1>
-                  </div>
-
-                  <div class="w-11/12 itemsStart flex-col space-y-3">
-                    <p>
-                      Experience transformative treatments that rewind the
-                      effects of time, leaving you with a visibly younger and
-                      revitalized appearance.
-                    </p>
-                    <a
-                      href="javascript:void(0)"
-                      class="flexy cursor-pointer uppercase py-2 px-5 rounded-full !border-2 border-white"
+              <div class="stayCard mx-3">
+                <div class="flipCard">
+                  <div class="flipSide">
+                    <img
+                      src="assets/images/vitality.png"
+                      class="img-fluid rounded-xl"
+                      alt="Jimmy Eat World"
+                    />
+                    <div
+                      class="absolute top-6 left-6 p-4 w-20 h-20 rounded-full text-white text-3xl montSemibold bg-gradient-to-b from-[#3498DB] to-[#00D2FF] flexy"
                     >
-                      <span class="relative -top-0.75">learn more</span>
-                    </a>
+                      60s
+                    </div>
+                    <div
+                      class="absolute bottom-6 left-6 itemsStart flex-col text-3xl lg:text-5xl text-white uppercase montSemibold w-full"
+                    >
+                      <h2>timeless</h2>
+                      <h2>health &</h2>
+                      <h2>wellness</h2>
+                    </div>
+                  </div>
+                  <div
+                    class="flipSide flipBack p-8 itemsStart flex-col space-y-7"
+                  >
+                    <div
+                      class="justCenter flex-col space-y-1 text-3xl lg:text-5xl text-white uppercase montSemibold"
+                    >
+                      <h2>timeless</h2>
+                      <h2>health &</h2>
+                      <h2>wellness</h2>
+                    </div>
+                    <ul class="justCenter flex-col space-y-1">
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Neurotoxins</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Botox</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Facial Fillers</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Body Sculpting</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Weight Loss</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Tirzepatide</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Semaglutide</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Hormone Therapy</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stayCard mx-3">
+                <div class="flipCard">
+                  <div class="flipSide">
+                    <img
+                      src="assets/images/brownhair.png"
+                      class="img-fluid rounded-xl"
+                      alt="Jimmy Eat World"
+                    />
+                    <div
+                      class="absolute top-6 left-6 p-4 w-20 h-20 rounded-full text-white text-3xl montSemibold bg-gradient-to-b from-[#3498DB] to-[#00D2FF] flexy"
+                    >
+                      30s
+                    </div>
+                    <div
+                      class="absolute bottom-6 left-6 itemsStart flex-col text-3xl lg:text-5xl text-white uppercase montSemibold w-full"
+                    >
+                      <h2>Stay</h2>
+                      <h2>snatched</h2>
+                    </div>
+                  </div>
+                  <div
+                    class="flipSide flipBack p-8 itemsStart flex-col space-y-7"
+                  >
+                    <div
+                      class="justCenter flex-col space-y-1 text-3xl lg:text-5xl text-white uppercase montSemibold"
+                    >
+                      <h2>Stay</h2>
+                      <h2>snatched</h2>
+                    </div>
+
+                    <ul class="justCenter flex-col space-y-1">
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Neurotoxins</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Botox</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Facial Fillers</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Body Sculpting</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Weight Loss</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Tirzepatide</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Semaglutide</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Hormone Therapy</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stayCard mx-3">
+                <div class="flipCard">
+                  <div class="flipSide">
+                    <img
+                      src="assets/images/blck.png"
+                      class="img-fluid rounded-xl"
+                      alt="Jimmy Eat World"
+                    />
+                    <div
+                      class="absolute top-6 left-6 p-4 w-20 h-20 rounded-full text-white text-3xl montSemibold bg-gradient-to-b from-[#3498DB] to-[#00D2FF] flexy"
+                    >
+                      50s
+                    </div>
+                    <div
+                      class="absolute bottom-6 left-6 itemsStart flex-col text-3xl lg:text-5xl text-white uppercase montSemibold w-full"
+                    >
+                      <h2>renew,</h2>
+                      <h2>restore</h2>
+                      <h2>rediate</h2>
+                    </div>
+                  </div>
+                  <div
+                    class="flipSide flipBack p-8 itemsStart flex-col space-y-7"
+                  >
+                    <div
+                      class="justCenter flex-col space-y-1 text-3xl lg:text-5xl text-white uppercase montSemibold"
+                    >
+                      <h2>renew,</h2>
+                      <h2>restore</h2>
+                      <h2>rediate</h2>
+                    </div>
+                    <ul class="justCenter flex-col space-y-1">
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Neurotoxins</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Botox</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Facial Fillers</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Body Sculpting</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Weight Loss</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Tirzepatide</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Semaglutide</span>
+                      </li>
+                      <li class="justCenter">
+                        <span class="text-xl montMedium">Hormone Therapy</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
