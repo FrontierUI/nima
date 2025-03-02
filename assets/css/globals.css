@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
   font-family: 'Organetto-Regular';
   src: url('/assets/fonts/organetto-regular.ttf') format('truetype');
@@ -32,9 +34,10 @@ body {
   background: #fff;
   color: #333333;
   overflow-x: hidden;
-  font-family: 'Galano-Grotesque';
-  margin: 0;
-  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  width: 100%;
+  min-width: 100%;
 }
 
 a,
@@ -94,6 +97,26 @@ a:active {
 
 .gelanoLight {
   font-family: 'Galano-Grotesque-Light';
+  font-weight: 300;
+}
+
+.montMedium {
+  font-family: 'Montserrat' sans-serif;
+  font-weight: 500;
+}
+
+.montBold {
+  font-family: 'Montserrat' sans-serif;
+  font-weight: 700;
+}
+
+.montSemibold {
+  font-family: 'Montserrat' sans-serif;
+  font-weight: 600;
+}
+
+.montLight {
+  font-family: 'Montserrat' sans-serif;
   font-weight: 300;
 }
 

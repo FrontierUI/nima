@@ -35,125 +35,35 @@
   </head>
 
   <body>
-    <div
-      class="fixed w-full min-h-screen overflow-hidden transition-transform transform -translate-x-full ease-in-out duration-500 z-[70]"
-      id="sidebar"
-    >
+    <main class="wrapperrd relative w-full min-w-full h-full z-[1]">
       <div
-        class="fixed top-0 -z-[1] h-screen w-full bg-cover bg-center bg-no-repeat"
-        style="background-image: url('/assets/images/bgMenuWhite.png')"
-      ></div>
-      <div class="grid grid-cols-1 lg:grid-cols-2 w-full h-screen">
-        <div class="flexStart flex-col text-white relative w-full h-full">
-          <div
-            class="absolute top-0 -z-[1] h-screen w-full bg-cover bg-center bg-no-repeat"
-            style="background-image: url('/assets/images/halfBlack.png')"
-          ></div>
+        class="fixed w-full min-h-screen overflow-hidden transition-transform transform -translate-x-full ease-in-out duration-500 z-[70]"
+        id="sidebar"
+      >
+        <div
+          class="fixed top-0 -z-[1] h-screen w-full bg-cover bg-center bg-no-repeat"
+          style="background-image: url('/assets/images/bgMenuWhite.png')"
+        ></div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 w-full h-screen">
+          <div class="flexStart flex-col text-white relative w-full h-full">
+            <div
+              class="absolute top-0 -z-[1] h-screen w-full bg-cover bg-center bg-no-repeat"
+              style="background-image: url('/assets/images/halfBlack.png')"
+            ></div>
 
-          <div class="flexStart w-56 pl-4 sm:pl-10 pt-4 sm:pt-12">
-            <a href="index.html" class="">
-              <img
-                src="assets/images/logoWhite.png"
-                class="img-fluid w-36"
-                alt=""
-              />
-            </a>
-          </div>
+            <div class="flexStart w-56 pl-4 sm:pl-10 pt-4 sm:pt-12">
+              <a href="index.html" class="">
+                <img
+                  src="assets/images/logoWhite.png"
+                  class="img-fluid w-36"
+                  alt=""
+                />
+              </a>
+            </div>
 
-          <button
-            id="btnSMClose"
-            class="block lg:!hidden absolute top-10 right-10 z-[100] rounded-full w-9 h-9 flex items-center justify-center block cursor-pointer bg-white/[0.25]"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-3.5 h-3.5 fill-black"
-              viewBox="0 0 320.591 320.591"
-            >
-              <path
-                d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
-                data-original="#000000"
-              ></path>
-              <path
-                d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
-                data-original="#000000"
-              ></path>
-            </svg>
-          </button>
-
-          <div class="flexy relative max-lg:-mt-40 lg:-mt-28 w-full h-full">
-            <ul
-              class="flex justify-center list-disc flex-col space-y-5 min-w-72"
-            >
-              <li class="flex items-center justify-between !list-disc">
-                <a
-                  href="javascript:void(0)"
-                  class="block hover:text-indigo-400 text-xl"
-                  >Home</a
-                >
-                <i class="fa-solid fa-chevron-right relative top-1"></i>
-              </li>
-              <li class="flex items-center justify-between !list-disc">
-                <a
-                  href="javascript:void(0)"
-                  class="block hover:text-indigo-400 text-xl"
-                  >Security</a
-                >
-                <i class="fa-solid fa-chevron-right relative top-1"></i>
-              </li>
-
-              <li class="flex items-center justify-between !list-disc">
-                <a
-                  href="javascript:void(0)"
-                  class="block hover:text-indigo-400 text-xl"
-                  >Features</a
-                >
-                <i class="fa-solid fa-chevron-right relative top-1"></i>
-              </li>
-
-              <li class="flex items-center justify-between !list-disc">
-                <a
-                  href="javascript:void(0)"
-                  class="block hover:text-indigo-400 text-xl"
-                  >Support</a
-                >
-                <i class="fa-solid fa-chevron-right relative top-1"></i>
-              </li>
-
-              <li class="flex items-center justify-between !list-disc">
-                <a
-                  href="javascript:void(0)"
-                  class="block hover:text-indigo-400 text-xl"
-                  >How It Works</a
-                >
-                <i class="fa-solid fa-chevron-right relative top-1"></i>
-              </li>
-
-              <li class="flex items-center justify-between !list-disc">
-                <a
-                  href="javascript:void(0)"
-                  class="block hover:text-indigo-400 text-xl"
-                  >About Us</a
-                >
-                <i class="fa-solid fa-chevron-right relative top-1"></i>
-              </li>
-
-              <li class="flex items-center justify-between !list-disc">
-                <a
-                  href="javascript:void(0)"
-                  class="block hover:text-indigo-400 text-xl"
-                  >Pricing</a
-                >
-                <i class="fa-solid fa-chevron-right relative top-1"></i>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="!hidden flexy flex-col w-full h-screen lg:!block">
-          <div class="flexy flex-col space-y-8 w-full h-full">
             <button
-              id="btnClose"
-              class="absolute lg:top-11 lg:right-14 z-[100] rounded-full w-9 h-9 flex items-center justify-center block cursor-pointer bg-white/[0.25]"
+              id="btnSMClose"
+              class="block lg:!hidden absolute top-10 right-10 z-[100] rounded-full w-9 h-9 flex items-center justify-center block cursor-pointer bg-white/[0.25]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -171,74 +81,117 @@
               </svg>
             </button>
 
-            <h1 class="uppercase text-6xl gelanoMedium">Nima</h1>
-            <div class="flexy flex-col space-y-5">
-              <p class="text-xl">920 E Dixie Ave, Leesburg, FL 34748</p>
-              <a class="text-xl" href="mailto:info@mywellnessstudio.com"
-                >info@MyWellnessStudio.com</a
+            <div
+              class="flexy relative max-lg:-mt-40 lg:-mt-28 w-full h-full px-6 sm:px-16"
+            >
+              <ul
+                class="flex justify-center list-disc flex-col space-y-5 min-w-full"
               >
-              <a class="text-xl" href="tel:3527280786">(352) 728-0786</a>
-            </div>
+                <li class="flex items-center justify-between !list-disc">
+                  <a
+                    href="index.html"
+                    class="block hover:text-indigo-400 text-xl"
+                    >Home</a
+                  >
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
+                </li>
+                <li class="flex items-center justify-between !list-disc">
+                  <a
+                    href="javascript:void(0)"
+                    class="block hover:text-indigo-400 text-xl"
+                    >Skin rejuvenation & cosmetic Service</a
+                  >
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
+                </li>
+                <li class="flex items-center justify-between !list-disc">
+                  <a
+                    href="javascript:void(0)"
+                    class="block hover:text-indigo-400 text-xl"
+                    >Anti-Aging At A Glance</a
+                  >
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
+                </li>
 
-            <div class="flex gap-x-4">
-              <a href="javascript:void(0)" class="w-12">
-                <img src="assets/images/ig.png" class="img-fluid" alt="" />
-              </a>
-              <a href="javascript:void(0)" class="w-12">
-                <img src="assets/images/fb.png" class="img-fluid" alt="" />
-              </a>
-              <a href="javascript:void(0)" class="w-12">
-                <img src="assets/images/x.png" class="img-fluid" alt="" />
-              </a>
+                <li class="flex items-center justify-between !list-disc">
+                  <a
+                    href="javascript:void(0)"
+                    class="block hover:text-indigo-400 text-xl"
+                    >Laser Resurfacing</a
+                  >
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
+                </li>
+
+                <li class="flex items-center justify-between !list-disc">
+                  <a
+                    href="javascript:void(0)"
+                    class="block hover:text-indigo-400 text-xl"
+                    >Body Sculpting & Contouring</a
+                  >
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
+                </li>
+
+                <li class="flex items-center justify-between !list-disc">
+                  <a
+                    href="javascript:void(0)"
+                    class="block hover:text-indigo-400 text-xl"
+                    >Hair Restoration</a
+                  >
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
+                </li>
+
+                <li class="flex items-center justify-between !list-disc">
+                  <a
+                    href="javascript:void(0)"
+                    class="block hover:text-indigo-400 text-xl"
+                    >Health & Wellness</a
+                  >
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
+                </li>
+
+                <li class="flex items-center justify-between !list-disc">
+                  <a
+                    href="javascript:void(0)"
+                    class="block hover:text-indigo-400 text-xl"
+                    >Men’s Health</a
+                  >
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
+                </li>
+
+                <li class="flex items-center justify-between !list-disc">
+                  <a
+                    href="javascript:void(0)"
+                    class="block hover:text-indigo-400 text-xl"
+                    >Medical Weight Loss</a
+                  >
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
+                </li>
+
+                <li class="flex items-center justify-between !list-disc">
+                  <a
+                    href="about-us.html"
+                    class="block hover:text-indigo-400 text-xl"
+                    >About Us</a
+                  >
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
+                </li>
+
+                <li class="flex items-center justify-between !list-disc">
+                  <a
+                    href="contact-us.html"
+                    class="block hover:text-indigo-400 text-xl"
+                    >Contact Us</a
+                  >
+                  <i class="fa-solid fa-chevron-right relative top-1"></i>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <div
-      class="bg-transparent absolute w-full z-[10] flex sm:px-10 px-6 py-3 min-h-[70px]"
-    >
-      <div class="w-full mx-auto">
-        <div class="flex items-center justify-between flex-wrap py-4 px-2">
-          <div class="flex items-center cursor-pointer z-[110]">
-            <a href="index.html" class="w-36">
-              <img src="assets/images/logoWhite.png" class="img-fluid" alt="" />
-            </a>
-          </div>
-
-          <div class="flex items-center space-x-5 text-[#333333]">
-            <a
-              href="javascript:void(0)"
-              class="hidden lg:block uppercase text-lg"
-              >book now</a
-            >
-            <a href="contact-us.html" class="hidden lg:block uppercase text-lg"
-              >contact us</a
-            >
-            <div id="collapseMenu" class="flex">
+          <div class="!hidden flexy flex-col w-full h-screen lg:!block">
+            <div class="flexy flex-col space-y-8 w-full h-full">
               <button
-                class="text-gray-500 w-9 h-9 bg-gray-900/[0.25] rounded-full flexy cursor-pointer"
-                id="open-sidebar"
-              >
-                <svg
-                  class="w-6 h-6"
-                  fill="none"
-                  stroke="#333333"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  ></path>
-                </svg>
-              </button>
-              <button
-                class="absolute top-5 right-4 z-[100] rounded-full w-9 h-9 flex items-center justify-center block cursor-pointer bg-white/[0.25]"
-                style="display: none"
+                id="btnClose"
+                class="absolute lg:top-11 lg:right-14 z-[100] rounded-full w-9 h-9 flex items-center justify-center block cursor-pointer bg-white/[0.25]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -255,13 +208,103 @@
                   ></path>
                 </svg>
               </button>
+
+              <h1 class="uppercase text-6xl gelanoMedium">Nima</h1>
+              <div class="flexy flex-col space-y-5">
+                <p class="text-xl">920 E Dixie Ave, Leesburg, FL 34748</p>
+                <a class="text-xl" href="mailto:info@mywellnessstudio.com"
+                  >info@MyWellnessStudio.com</a
+                >
+                <a class="text-xl" href="tel:3527280786">(352) 728-0786</a>
+              </div>
+
+              <div class="flex gap-x-4">
+                <a href="javascript:void(0)" class="w-12">
+                  <img src="assets/images/ig.png" class="img-fluid" alt="" />
+                </a>
+                <a href="javascript:void(0)" class="w-12">
+                  <img src="assets/images/fb.png" class="img-fluid" alt="" />
+                </a>
+                <a href="javascript:void(0)" class="w-12">
+                  <img src="assets/images/x.png" class="img-fluid" alt="" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <main class="wrapperrd relative w-full h-full z-[1]">
+      <div
+        class="bg-transparent absolute w-full z-[10] flex sm:px-10 px-6 py-3 min-h-[70px]"
+      >
+        <div class="w-full mx-auto">
+          <div class="flex items-center justify-between flex-wrap py-4 px-2">
+            <div class="flex items-center cursor-pointer z-[110]">
+              <a href="index.html" class="w-36">
+                <img
+                  src="assets/images/logoWhite.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div class="flex items-center space-x-5 text-[#333333]">
+              <a
+                href="javascript:void(0)"
+                class="hidden lg:block uppercase text-lg"
+                >book now</a
+              >
+              <a
+                href="contact-us.html"
+                class="hidden lg:block uppercase text-lg"
+                >contact us</a
+              >
+              <div id="collapseMenu" class="flex">
+                <button
+                  class="text-gray-500 w-9 h-9 bg-gray-900/[0.25] rounded-full flexy cursor-pointer"
+                  id="open-sidebar"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="#333333"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    ></path>
+                  </svg>
+                </button>
+                <button
+                  class="absolute top-5 right-4 z-[100] rounded-full w-9 h-9 flex items-center justify-center block cursor-pointer bg-white/[0.25]"
+                  style="display: none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 fill-black"
+                    viewBox="0 0 320.591 320.591"
+                  >
+                    <path
+                      d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                      data-original="#000000"
+                    ></path>
+                    <path
+                      d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                      data-original="#000000"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section class="relative w-full max-lg:h-full lg:h-screen nimaHero z-[1]">
         <div
           class="absolute top-0 -z-[1] max-lg:h-full lg:h-screen w-full bg-cover bg-center bg-no-repeat"

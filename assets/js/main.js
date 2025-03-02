@@ -104,6 +104,8 @@ $(document).ready(function () {
   $('.testimonialSlider').slick({
     centerMode: true,
     centerPadding: '30px',
+    dots: false,
+    arrows: false,
     slidesToShow: 5,
     autoplay: true,
     autoplaySpeed: 2000,
