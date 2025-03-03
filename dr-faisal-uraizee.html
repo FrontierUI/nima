@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Nima | Meet the team</title>
+    <title>Nima | Meet Dr Faisal Uraizee (M.D.)</title>
 
     <link
       rel="stylesheet"
@@ -64,6 +65,33 @@
         .testiSlide.slick-center .content p {
           width: 100% !important;
         }
+      }
+
+      .visionaryCont .visionCont {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+      }
+      .visionaryCont .visionCont:hover {
+        opacity: 0;
+      }
+
+      .visionaryCont .visionCont img {
+        filter: grayscale(100%);
+      }
+
+      .visionaryCont .visionContent {
+        opacity: 0;
+        transition: 0.5s ease-in-out;
+      }
+
+      .visionaryCont .visionContent img {
+        filter: grayscale(0);
+      }
+
+      .visionaryCont .visionContent:hover {
+        opacity: 1;
       }
     </style>
   </head>
@@ -365,11 +393,16 @@
             </div>
 
             <div class="itemsStart flex-col space-y-7">
-              <div class="itemsStart flex-col space-y-2 mt-10 lg:mt-12">
+              <div class="itemsStart flex-col space-y-2 mt-5">
                 <h1
-                  class="uppercase text-3xl lg:text-6xl montMedium lg:tracking-wide"
+                  class="uppercase text-3xl lg:text-6xl montSemibold lg:tracking-wide"
                 >
-                  meet the team
+                  faisal
+                </h1>
+                <h1
+                  class="uppercase text-3xl lg:text-6xl montSemibold lg:tracking-wide"
+                >
+                  Uraizee, m.d.
                 </h1>
                 <p class="text-lg montMedium">
                   Newport Integrative Medicine & Aesthetics (NIMA)
@@ -413,27 +446,43 @@
               />
             </div>
 
-            <div class="justStart relative w-full h-full lg:pl-8 lg:w-10/12">
-              <div class="justStart flex-col space-y-5 lg:space-y-8">
+            <div class="justStart relative w-full h-full">
+              <div
+                class="itemsStart flex-col relative lg:left-12 w-full lg:w-10/12 space-y-5 lg:space-y-8"
+              >
+                <hr
+                  class="absolute -left-5 top-2 !h-[8.5rem] w-[1px] bg-[#333333]"
+                />
+
                 <div
-                  class="justStart uppercase montSemibold text-2xl lg:text-4xl"
+                  class="itemsStart flex-col uppercase montSemibold text-3xl lg:text-5xl"
                 >
-                  <h1>
-                    Your Experts in Anti-Aging, Body Contouring, Sexual Wellness
-                    & Regenerative Medicine in Newport Beach & Irvine
-                  </h1>
+                  <h1>faisal</h1>
+                  <h1>Uraizee,</h1>
+                  <h1>(m.d.)</h1>
                 </div>
 
-                <div class="justStart">
+                <div class="itemsStart">
+                  <p class="text-xl montSemibold">
+                    The Pioneer of Aesthetic & Sexual Wellness Transformation in
+                    Newport Beach.
+                  </p>
+                </div>
+
+                <div class="itemsStart flex-col space-y-2">
                   <p>
-                    At Newport Integrative Medicine & Aesthetics (NIMA), we
-                    believe that true transformation starts from within. Our
-                    team of highly skilled medical professionals is dedicated to
-                    helping you achieve optimal health, confidence, and vitality
-                    through cutting-edge non-surgical treatments. Whether you’re
-                    looking for body sculpting, hormone therapy, sexual wellness
-                    solutions, or skin rejuvenation, our experts are here to
-                    guide you every step of the way.
+                    Ditch the one-size-fits-all approach—your journey to
+                    youthful radiance, peak vitality, and body confidence starts
+                    here! Dr. Faisal Uraizee, a leader in non-surgical
+                    aesthetics, regenerative medicine, and sexual wellness, is
+                    redefining the future of anti-aging, body contouring, and
+                    hormonal health.
+                  </p>
+                  <p>
+                    As Newport Beach’s #1 Medical Aesthetics & Sexual Wellness
+                    Provider, Dr. Uraizee takes a holistic, science-backed
+                    approach to help patients reverse aging, restore vitality,
+                    and reclaim their confidence from the inside out.
                   </p>
                 </div>
               </div>
@@ -442,315 +491,86 @@
         </div>
       </section>
 
-      <section class="relative w-full h-screen py-10">
-        <div class="grid grid-cols-1 lg:grid-cols-2 w-full h-full">
-          <div
-            class="!w-full lg:!w-[50%] h-screen flexy absolute top-0 left-0 bg-center bg-cover bg-no-repeat !border-0 !outline-none"
-            style="background-image: url('/assets/images/bgBlue.png')"
-          >
-            <div class="itemsStart w-full flex-col relative lg:left-24 px-6">
-              <hr class="absolute left-0 top-2 !h-[8.5rem] w-[1px] bg-white" />
-              <div class="itemsStart flex-col space-y-5 text-white">
-                <div
-                  class="justCenter flex-col uppercase text-5xl montSemibold"
-                >
-                  <h1>faisal</h1>
-                  <h1>Uraizee,</h1>
-                  <h1>(m.d.)</h1>
-                </div>
-
-                <div class="justCenter w-full lg:w-3/4">
-                  <p class="text-lg montMedium">
-                    Founder & Medical Director | Expert in Anti-Aging,
-                    Regenerative Medicine & Sexual Wellness
-                  </p>
-                </div>
-
-                <div class="justCenter flex-col w-full lg:w-[73%] space-y-3">
-                  <p class="text-md">
-                    Dr. Faisal Uraizee is a renowned leader in non-surgical
-                    anti-aging, regenerative medicine, and men’s sexual
-                    wellness. With a passion for helping patients feel and look
-                    their best, Dr. Uraizee specializes in:
-                  </p>
-                  <ul class="justCenter flex-col space-y-1.5 w-full list-disc">
-                    <li class="!list-disc flex items-start justify-start">
-                      <p class="text-md">
-                        <i class="fa-solid fa-check text-[#333333]"></i>
-                        Advanced Skin Rejuvenation – Morpheus8, PRP
-                        Microneedling & Pixel8 RF.
-                      </p>
-                    </li>
-                    <li class="!list-disc flex items-start justify-start">
-                      <p class="text-md">
-                        <i class="fa-solid fa-check text-[#333333]"></i>
-                        Medical Weight Loss & Body Contouring – EmSculpt Neo,
-                        Cryotherapy & Peptide Therapy.
-                      </p>
-                    </li>
-                    <li class="!list-disc flex items-start justify-start">
-                      <p class="text-md">
-                        <i class="fa-solid fa-check text-[#333333]"></i>
-                        Testosterone Replacement & Hormone Therapy – BioTe
-                        Pellets & Custom TRT Plans.
-                      </p>
-                    </li>
-                    <li class="!list-disc flex items-start justify-start">
-                      <p class="text-md">
-                        <i class="fa-solid fa-check text-[#333333]"></i>
-                        Erectile Dysfunction Solutions – Shockwave Therapy,
-                        Peptides & Testosterone Optimization.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-
-                <a
-                  href="javascript:void(0)"
-                  class="flexy cursor-pointer uppercase py-2 px-5 lg:px-8 rounded-full !border-2 border-white"
-                >
-                  learn more
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="hidden lg:block max-w-full lg:max-w-[50%] w-full h-screen absolute top-0 right-0 bg-center bg-cover bg-no-repeat !border-0 !outline-none"
-            style="background-image: url('/assets/images/faisal.png')"
-          ></div>
-        </div>
-      </section>
-
-      <section class="relative w-full h-screen py-10">
-        <div class="grid grid-cols-1 lg:grid-cols-2 w-full h-full">
-          <div
-            class="hidden lg:block max-w-full lg:max-w-[50%] w-full h-screen absolute top-0 left-0 bg-center bg-cover bg-no-repeat !border-0 !outline-none"
-            style="background-image: url('/assets/images/drshir.png')"
-          ></div>
-
-          <div
-            class="!w-full lg:!w-[50%] h-screen flexy absolute top-0 right-0 bg-center bg-cover bg-no-repeat !border-0 !outline-none"
-            style="background-image: url('/assets/images/bgBlck.png')"
-          >
-            <div class="itemsStart w-full flex-col relative lg:left-24 px-6">
-              <hr class="absolute left-0 top-2 !h-[8.5rem] w-[1px] bg-white" />
-              <div class="itemsStart flex-col space-y-5 text-white">
-                <div
-                  class="justCenter flex-col uppercase text-5xl montSemibold"
-                >
-                  <h1>faisal</h1>
-                  <h1>Uraizee,</h1>
-                  <h1>(m.d.)</h1>
-                </div>
-
-                <div class="justCenter w-full lg:w-3/4">
-                  <p class="text-lg montMedium">
-                    Founder & Medical Director | Expert in Anti-Aging,
-                    Regenerative Medicine & Sexual Wellness
-                  </p>
-                </div>
-                <div class="justCenter w-full lg:w-3/4">
-                  <p class="text-md">
-                    Dr. Faisal Uraizee is a renowned leader in non-surgical
-                    anti-aging, regenerative medicine, and men’s sexual
-                    wellness. With a passion for helping patients feel and look
-                    their best, Dr. Uraizee specializes in:
-                  </p>
-                </div>
-
-                <div class="justCenter flex-col w-full lg:w-[73%] space-y-3">
-                  <ul class="justCenter flex-col space-y-1 w-full list-disc">
-                    <li class="!list-disc flex items-start justify-start">
-                      <p class="text-md">
-                        Advanced Skin Rejuvenation – Morpheus8, PRP
-                        Microneedling & Pixel8 RF.
-                      </p>
-                    </li>
-
-                    <li class="!list-disc flex items-start justify-start">
-                      <p class="text-md">
-                        Medical Weight Loss & Body Contouring – EmSculpt Neo,
-                        Cryotherapy & Peptide Therapy.
-                      </p>
-                    </li>
-                    <li class="!list-disc flex items-start justify-start">
-                      <p class="text-md">
-                        Testosterone Replacement & Hormone Therapy – BioTe
-                        Pellets & Custom TRT Plans.
-                      </p>
-                    </li>
-                    <li class="!list-disc flex items-start justify-start">
-                      <p class="text-md">
-                        Erectile Dysfunction Solutions – Shockwave Therapy,
-                        Peptides & Testosterone Optimization.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-
-                <a
-                  href="javascript:void(0)"
-                  class="flexy cursor-pointer uppercase py-2 px-5 lg:px-8 rounded-full !border-2 border-white"
-                >
-                  learn more
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="relative w-full h-screen">
-        <div class="grid grid-cols-1 lg:grid-cols-2 w-full h-full">
-          <div
-            class="max-w-full lg:max-w-[50%] w-full h-screen flexy absolute top-0 left-0 bg-center bg-cover bg-no-repeat !border-0 !outline-none"
-            style="background-image: url('/assets/images/bgBlue.png')"
-          >
-            <div class="itemsStart flex-col relative lg:left-40 px-6">
-              <hr class="absolute left-2 top-1 !h-10 w-[1px] bg-white" />
-              <div class="itemsStart flex-col space-y-5 text-white">
-                <div class="justCenter flex-col uppercase text-5xl organetto">
-                  <h1>spike</h1>
-                </div>
-
-                <div class="justCenter w-full lg:w-3/5">
-                  <p class="tex-md">
-                    Meet Spike, the four-legged champion of NIMA proudly serving
-                    as our Licensed Service Animal and beloved mascot. Spike's
-                    heartwarming journey started when he was lovingly adopted by
-                    our Aesthetician, Mindi, when he was just 5 weeks old. From
-                    that moment, a lifelong bond was formed, and Spike quickly
-                    became an essential part of our family.
-                  </p>
-                </div>
-
-                <div class="flexStart">
-                  <a
-                    href="javascript:void(0)"
-                    class="flexy cursor-pointer uppercase py-2 px-5 lg:px-10 rounded-full !border-2 border-white"
-                    >learn more</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="hidden lg:block max-w-full lg:max-w-[50%] w-full h-screen absolute top-0 right-0 bg-center bg-cover bg-no-repeat !border-0 !outline-none"
-            style="background-image: url('/assets/images/refined.png')"
-          ></div>
-        </div>
-      </section>
-
-      <footer class="relative w-full h-full py-6 lg:py-12">
+      <section class="relative w-full h-full visionary">
         <div
-          class="w-full h-full absolute top-0 -z-[1] bg-center bg-cover bg-no-repeat"
+          class="absolute -z-[1] h-full w-full bg-cover bg-center bg-no-repeat"
           style="background-image: url('/assets/images/bgMenuWhite.png')"
         ></div>
-
-        <hr
-          class="absolute hidden lg:block bottom-16 !w-full !h-[1px] bg-[#333333]"
-        />
-
-        <div class="flexStart flex-col space-y-5 px-6 sm:px-10">
+        <div class="relative flexy flex-col w-full h-full py-6 lg:py-12">
           <div
-            class="flex flex-col items-start justify-start lg:flex-row w-full h-full max-lg:space-y-5"
+            class="flexy w-full relative flex-col space-y-5 lg:space-y-6 px-6"
           >
             <div
-              class="w-full lg:w-1/2 relative flexStart flex-col max-lg:space-y-5"
+              class="flexy flex-col text-center space-y-1 uppercase text-3xl lg:text-6xl"
             >
-              <p class="text-lg lg:w-2/3">
-                My Wellness Studio offers a comprehensive suite of advanced
-                dental, aesthetic, and wellness treatments, tailored to enhance
-                your health, beauty, and confidence in a holistic and
-                personalized manner.
+              <h1 class="montLight">a visionary in aesthetics,</h1>
+              <h1 class="montSemibold">sexual wellness &</h1>
+              <h1 class="montSemibold">regenerative medicine</h1>
+            </div>
+
+            <div class="flexy text-center lg:w-3/5">
+              <p class="text-md">
+                Dr. Uraizee is a board-certified Family Medicine physician who
+                believes that aesthetic beauty and sexual vitality start from
+                within. His root-cause approach ensures that every treatment is
+                customized for long-lasting, natural results.
               </p>
-
-              <div class="flex gap-x-3 relative lg:top-[7.5rem]">
-                <a href="javascript:void(0)" class="w-12">
-                  <img src="assets/images/ig.png" class="img-fluid" alt="" />
-                </a>
-                <a href="javascript:void(0)" class="w-12">
-                  <img src="assets/images/x.png" class="img-fluid" alt="" />
-                </a>
-                <a href="javascript:void(0)" class="w-12">
-                  <img src="assets/images/fb.png" class="img-fluid" alt="" />
-                </a>
-              </div>
             </div>
 
-            <div
-              class="w-full lg:w-1/2 relative flex items-start justify-start lg:justify-evenly flex-col lg:flex-row"
-            >
-              <div class="flexStart flex-col importLinks space-y-4">
-                <p class="text-xl">Important Links</p>
-                <ul class="flexStart flex-col space-y-2">
-                  <li><a class="text-lg" href="/">Home</a></li>
-                  <li>
-                    <a href="javascript:void(0)" class="text-lg">Security</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)" class="text-lg">Features</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)" class="text-lg">Support</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)" class="text-lg"
-                      >How It Works</a
-                    >
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)" class="text-lg">About Us</a>
-                  </li>
-                </ul>
-              </div>
-
-              <div
-                class="flexStart flex-col importLinks max-lg:space-y-5 space-y-4"
-              >
-                <p class="text-xl">Contact Us</p>
-                <ul class="flexStart flex-col space-y-2">
-                  <li>
-                    <p class="text-lg">920 E Dixie Ave, Leesburg, FL 34748</p>
-                  </li>
-                  <li>
-                    <a href="mailto:info@mywellnessstudio.com" class="text-lg"
-                      >info@MyWellnessStudio.com</a
-                    >
-                  </li>
-                  <li>
-                    <a href="tel:3257280786" class="text-lg">(352) 728-0786</a>
-                  </li>
-                </ul>
-
-                <a
-                  class="absolute max-lg:-bottom-[5rem] lg:right-0 lg:-bottom-10 max-lg:py-5"
-                  href="index.html"
-                >
-                  <img
-                    src="assets/images/logoGrad.png"
-                    class="img-fluid w-36 lg:w-56"
-                    alt=""
-                  />
-                </a>
-              </div>
+            <div class="flexy text-center lg:w-3/5">
+              <p class="text-lg montMedium">
+                Cellular Rejuvenation & Hormonal Optimization
+              </p>
             </div>
+
+            <hr class="absolute bg-[#333333] w-full !h-[1px] bottom-0" />
           </div>
 
           <div
-            class="py-4 max-lg:pt-10 relative lg:top-10 flex items-center justify-start flex-col lg:justify-between lg:flex-row"
+            class="relative w-full h-full grid md:grid-cols-2 lg:grid-cols-4 block items-center justify-center px-6 sm:px-12 gap-5 pt-10"
           >
-            <p class="text-md">© 2025 NIMA.com, All Rights Reserved.</p>
+            <div class="relative flexy w-full h-full text-white visionaryCont">
+              <div class="visionCont w-full h-full flexy relative">
+                <img src="assets/images/nadiv.png" class="img-fluid" alt="" />
+                <div
+                  class="absolute flexy flex-col p-6 uppercase text-3xl lg:text-5xl leading-none montSemibold"
+                >
+                  <h2>nad+ iv</h2>
+                  <h2>therapy</h2>
+                </div>
 
-            <div class="flex gap-x-10">
-              <a href="javascript:void(0)">Privacy Policy</a>
-              <a href="javascript:void(0)">Terms of Use</a>
+                <div class="visionContent absolute flexy w-full h-full">
+                  <img
+                    src="assets/images/circleBlue.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="relative w-full h-full visionCont">
+              <img src="assets/images/estro.png" class="img-fluid" alt="" />
+            </div>
+
+            <div class="relative w-full h-full visionCont">
+              <img
+                src="assets/images/lossbeyond.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+
+            <div class="relative w-full h-full visionCont">
+              <img
+                src="assets/images/advanceSexual.png"
+                class="img-fluid"
+                alt=""
+              />
             </div>
           </div>
         </div>
-      </footer>
+      </section>
     </main>
 
     <script src="assets/js/jquery-3.7.1.js"></script>
