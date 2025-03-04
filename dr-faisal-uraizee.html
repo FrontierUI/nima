@@ -66,33 +66,6 @@
           width: 100% !important;
         }
       }
-
-      .visionaryCont .visionCont {
-        width: 100%;
-        height: 100%;
-        opacity: 1;
-        transition: 0.5s ease-in-out;
-      }
-      .visionaryCont .visionCont:hover {
-        opacity: 0;
-      }
-
-      .visionaryCont .visionCont img {
-        filter: grayscale(100%);
-      }
-
-      .visionaryCont .visionContent {
-        opacity: 0;
-        transition: 0.5s ease-in-out;
-      }
-
-      .visionaryCont .visionContent img {
-        filter: grayscale(0);
-      }
-
-      .visionaryCont .visionContent:hover {
-        opacity: 1;
-      }
     </style>
   </head>
 
@@ -530,51 +503,150 @@
           <div
             class="relative w-full h-full grid md:grid-cols-2 lg:grid-cols-4 block items-center justify-center px-6 sm:px-12 gap-5 pt-10"
           >
-            <div class="relative flexy w-full h-full text-white visionaryCont">
-              <div class="visionCont w-full h-full flexy relative">
-                <img src="assets/images/nadiv.png" class="img-fluid" alt="" />
+            <div
+              class="relative flexy w-full h-full cursor-pointer text-white visionaryCont group"
+            >
+              <div
+                class="visionFront w-full h-full flexy relative transition-opacity duration-500 opacity-100 group-hover:opacity-0"
+              >
+                <img
+                  src="assets/images/nadiv.png"
+                  class="img-fluid grayscale"
+                  alt=""
+                />
                 <div
-                  class="absolute flexy flex-col p-6 uppercase text-center text-3xl lg:text-5xl leading-none montSemibold"
+                  class="absolute flexy flex-col p-6 uppercase text-center text-3xl lg:text-4xl leading-none font-semibold"
                 >
                   <h2>nad+ iv</h2>
                   <h2>therapy</h2>
                 </div>
-
-                <div class="visionContent absolute flexy w-full h-full">
-                  <img
-                    src="assets/images/circleBlue.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="absolute flexy p-8 text-center w-full h-full">
-                    <p class="text-sm">
-                      Address low testosterone, estrogen imbalances, and
-                      metabolic disorders to restore energy, libido, and overall
-                      well-being.
-                    </p>
-                  </div>
+              </div>
+              <div
+                class="visionBack absolute flexy w-full h-full transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+              >
+                <img
+                  src="assets/images/circleBlue.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="absolute flexy p-8 text-center w-full h-full">
+                  <p class="text-sm">
+                    Address low testosterone, estrogen imbalances, and metabolic
+                    disorders to restore energy, libido, and overall well-being.
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div class="relative w-full h-full visionCont">
-              <img src="assets/images/estro.png" class="img-fluid" alt="" />
+            <div
+              class="relative flexy w-full h-full cursor-pointer text-white visionaryCont group"
+            >
+              <div
+                class="visionFront w-full h-full flexy relative transition-opacity duration-500 opacity-100 group-hover:opacity-0"
+              >
+                <img
+                  src="assets/images/estro.png"
+                  class="img-fluid grayscale"
+                  alt=""
+                />
+                <div
+                  class="absolute flexy flex-col p-6 uppercase text-center text-3xl lg:text-4xl leading-none font-semibold"
+                >
+                  <h2>metabolic</h2>
+                  <h2>disorders</h2>
+                </div>
+              </div>
+              <div
+                class="visionBack absolute flexy w-full h-full transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+              >
+                <img
+                  src="assets/images/circleBlue.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="absolute flexy p-8 text-center w-full h-full">
+                  <p class="text-sm">
+                    Address low testosterone, estrogen imbalances, and metabolic
+                    disorders to restore energy, libido, and overall well-being.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div class="relative w-full h-full visionCont">
-              <img
-                src="assets/images/lossbeyond.png"
-                class="img-fluid"
-                alt=""
-              />
+            <div
+              class="relative flexy w-full h-full cursor-pointer text-white visionaryCont group"
+            >
+              <div
+                class="visionFront w-full h-full flexy relative transition-opacity duration-500 opacity-100 group-hover:opacity-0"
+              >
+                <img
+                  src="assets/images/lossbeyond.png"
+                  class="img-fluid grayscale"
+                  alt=""
+                />
+                <div
+                  class="absolute flexy flex-col p-6 uppercase text-center text-3xl lg:text-4xl leading-none font-semibold"
+                >
+                  <h2>medical</h2>
+                  <h2>Weight loss</h2>
+                  <h2>beyond</h2>
+                  <h2>Semaglutide</h2>
+                </div>
+              </div>
+
+              <div
+                class="visionBack absolute flexy w-full h-full transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+              >
+                <img
+                  src="assets/images/circleBlue.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="absolute flexy p-8 text-center w-full h-full">
+                  <p class="text-sm">
+                    Address low testosterone, estrogen imbalances, and metabolic
+                    disorders to restore energy, libido, and overall well-being.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div class="relative w-full h-full visionCont">
-              <img
-                src="assets/images/advanceSexual.png"
-                class="img-fluid"
-                alt=""
-              />
+            <div
+              class="relative flexy w-full h-full cursor-pointer text-white visionaryCont group"
+            >
+              <div
+                class="visionFront w-full h-full flexy relative transition-opacity duration-500 opacity-100 group-hover:opacity-0"
+              >
+                <img
+                  src="assets/images/advanceSexual.png"
+                  class="img-fluid grayscale"
+                  alt=""
+                />
+                <div
+                  class="absolute flexy flex-col p-6 uppercase text-center text-3xl lg:text-4xl leading-none font-semibold"
+                >
+                  <h2>advanced</h2>
+                  <h2>sexual</h2>
+                  <h2>wellness</h2>
+                  <h2>Solutions</h2>
+                </div>
+              </div>
+
+              <div
+                class="visionBack absolute flexy w-full h-full transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+              >
+                <img
+                  src="assets/images/circleBlue.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="absolute flexy p-8 text-center w-full h-full">
+                  <p class="text-sm">
+                    Address low testosterone, estrogen imbalances, and metabolic
+                    disorders to restore energy, libido, and overall well-being.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -591,7 +663,7 @@
               </div>
 
               <div class="itemsStart lg:w-1/2">
-                <p class="text-sm">
+                <p class="text-[15px]">
                   At NIMA, we recognize that hormones, aging, and overall health
                   play a significant role in both men’s and women’s sexual
                   well-being. That’s why Dr. Uraizee has designed two
@@ -601,7 +673,7 @@
               </div>
 
               <hr
-                class="hidden lg:block absolute bottom-6 right-0 w-[67%] !h-[1px] bg-[#333333]"
+                class="hidden lg:block absolute bottom-6 right-0 w-[53%] !h-[1px] bg-[#333333]"
               />
             </div>
           </div>
@@ -618,7 +690,7 @@
               <hr class="absolute left-0 top-2 !h-[14rem] w-[1px] bg-white" />
               <div class="itemsStart flex-col space-y-4 text-white">
                 <div
-                  class="justCenter flex-col uppercase text-5xl montSemibold"
+                  class="justCenter flex-col uppercase text-4xl lg:text-5xl montSemibold"
                 >
                   <h1>Mendurance™:</h1>
                   <h1>the ultimate</h1>
@@ -776,7 +848,7 @@
           <div class="itemsStart relative w-full max-lg:px-6 lg:pl-12">
             <div class="itemsStart flex-col space-y-5">
               <div
-                class="itemsStart flex-col uppercase text-3xl lg:text-6xl space-y-1"
+                class="itemsStart flex-col uppercase text-3xl lg:text-6xl space-y-0"
               >
                 <h1 class="montLight">master of</h1>
                 <h1 class="montSemibold">
@@ -786,7 +858,7 @@
               </div>
 
               <div class="itemsStart lg:w-1/2">
-                <p class="text-sm">
+                <p class="text-md">
                   Dr. Uraizee is an innovator in non-surgical facial
                   rejuvenation and body contouring, using advanced medical
                   aesthetics, regenerative medicine, and cutting-edge technology
@@ -795,7 +867,7 @@
               </div>
 
               <hr
-                class="hidden lg:block absolute bottom-6 right-0 w-[67%] !h-[1px] bg-[#333333]"
+                class="hidden lg:block absolute bottom-6 right-0 w-[52%] !h-[1px] bg-[#333333]"
               />
             </div>
           </div>
@@ -809,13 +881,565 @@
                 class="img-fluid max-h-[700px] min-w-full"
                 alt=""
               />
+
+              <div
+                class="absolute bottom-5 left-5 text-white w-full overflow-hidden space-y-0"
+              >
+                <div
+                  class="flex flex-col text-2xl lg:text-5xl montMedium uppercase"
+                >
+                  <h2>the future of</h2>
+                  <h2>body contouring:</h2>
+                  <h2>6 hours to a</h2>
+                  <h2>6-pack</h2>
+                </div>
+              </div>
             </div>
-            <div class="flexy relative w-full h-full rounded-lg">
+
+            <div class="justStart relative w-full h-full rounded-lg">
               <div
                 class="absolute h-full w-full max-h-[700px] bg-gradient-to-br from-[#3498DB] to-[#00D2FF] rounded-2xl"
               ></div>
 
-              <div class="justStart relative flex-col"></div>
+              <div class="justCenter flex-col relative p-8 lg:left-6 lg:w-4/5">
+                <hr
+                  class="hidden lg:block absolute left-2 top-10 h-28 w-[1.5px] bg-white"
+                />
+
+                <div class="justCenter flex-col space-y-5">
+                  <div
+                    class="justCenter flex-col space-y-1 text-2xl lg:text-4xl montMedium uppercase text-white"
+                  >
+                    <h2>signature Facial</h2>
+                    <h2>Rejuvenation</h2>
+                    <h2>Techniques</h2>
+                  </div>
+
+                  <ul
+                    class="justCenter flex-col space-y-2 text-white leading-tight"
+                  >
+                    <li class="flexy gap-x-3.5">
+                      <div
+                        class="flexy w-7 h-7 p-2 rounded-full text-white bg-[#333333]"
+                      >
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <p>
+                        <span class="montSemibold">PDO Thread Lifts –</span>
+                        Instantly lift and tighten sagging skin for a youthful,
+                        refreshed look.
+                      </p>
+                    </li>
+                    <li class="flexy gap-x-3.5">
+                      <div
+                        class="flexy w-7 h-7 p-2 rounded-full text-white bg-[#333333]"
+                      >
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <p>
+                        <span class="montSemibold"
+                          >BioFiller & Dermal Fillers –</span
+                        >
+                        Restore lost volume, contour facial features, and
+                        redefine youthfulness.
+                      </p>
+                    </li>
+                    <li class="flexy gap-x-3.5">
+                      <div
+                        class="flexy w-7 h-7 p-2 rounded-full text-white bg-[#333333]"
+                      >
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <p>
+                        <span class="montSemibold">Botox & Daxxify –</span>
+                        Smooth out wrinkles and fine lines for a naturally
+                        rejuvenated appearance.
+                      </p>
+                    </li>
+                    <li class="flexy gap-x-3.5">
+                      <div
+                        class="flexy w-7 h-7 p-2 rounded-full text-white bg-[#333333]"
+                      >
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <p>
+                        <span class="montSemibold"
+                          >Morpheus8 & RF Microneedling –</span
+                        >
+                        Stimulate collagen production for firm, radiant skin
+                        with zero downtime.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative w-full h-full patientChoose">
+        <div
+          class="w-full h-full absolute top-0 -z-[1] bg-center bg-cover bg-no-repeat"
+          style="background-image: url('/assets/images/bgMenuWhite.png')"
+        ></div>
+
+        <div class="flexy flex-col w-full h-full py-6 space-y-5 lg:space-y-8">
+          <div class="itemsStart relative w-full max-lg:px-6 lg:pl-12">
+            <div class="itemsStart flex-col space-y-5">
+              <div
+                class="itemsStart flex-col uppercase text-3xl lg:text-6xl space-y-0"
+              >
+                <h1 class="montLight">master of</h1>
+                <h1 class="montSemibold">
+                  <span class="montLight">facial &</span> body
+                </h1>
+                <h1 class="montSemibold">Sculpting</h1>
+              </div>
+              <div class="itemsStart lg:w-3/5">
+                <p class="text-md">
+                  At Newport Integrative Medicine & Aesthetics, Dr. Uraizee
+                  breaks the mold of traditional aesthetics by focusing on
+                  scientific innovation, natural beauty, and personalized
+                  transformation.
+                </p>
+              </div>
+              <hr
+                class="hidden lg:block absolute bottom-6 right-0 w-[52%] !h-[1px] bg-[#333333]"
+              />
+            </div>
+          </div>
+
+          <div class="flexy relative px-6 sm:px-12 w-full h-full pb-6">
+            <div
+              class="relative w-full h-full max-h-[600px] bg-gradient-to-br from-[#3498DB] to-[#00D2FF] rounded-2xl overflow-hidden"
+            >
+              <div class="itemsStart relative text-white w-full h-full">
+                <div class="itemsStart flex-col p-8 w-full h-full">
+                  <div
+                    class="itemsStart flex-col space-y-1 montSemibold text-3xl lg:text-5xl uppercase"
+                  >
+                    <h1>why patients</h1>
+                    <h1>choose dr.</h1>
+                    <h1>Uraizee</h1>
+                  </div>
+
+                  <div
+                    class="relative w-full max-lg:min-w-full lg:max-w-[500px] pt-20 lg:pt-40"
+                  >
+                    <div class="patientSlider">
+                      <div class="slicky">
+                        <div class="startBet relative gap-x-3">
+                          <div
+                            class="flexy w-16 h-16 rounded-full !border !border-[#333333] text-white montSemibold text-2xl"
+                          >
+                            1
+                          </div>
+                          <div class="itemsStart flex-col space-y-2 text-white">
+                            <div
+                              class="itemsStart flex-col uppercase text-2xl lg:text-4xl montMedium space-y-0"
+                            >
+                              <h2>personalized</h2>
+                              <h2>treatments</h2>
+                            </div>
+
+                            <div class="itemsStart">
+                              <p>
+                                Every procedure is customized for your unique
+                                goals.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="slicky">
+                        <div class="startBet relative gap-x-3">
+                          <div
+                            class="flexy w-16 h-16 rounded-full !border !border-[#333333] text-white montSemibold text-2xl"
+                          >
+                            2
+                          </div>
+                          <div class="itemsStart flex-col space-y-2 text-white">
+                            <div
+                              class="itemsStart flex-col uppercase text-2xl lg:text-4xl montMedium space-y-0"
+                            >
+                              <h2>personalized</h2>
+                              <h2>treatments</h2>
+                            </div>
+
+                            <div class="itemsStart">
+                              <p>
+                                Every procedure is customized for your unique
+                                goals.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hidden lg:block absolute right-0 overflow-hidden">
+                  <img
+                    src="assets/images/patientChooses.png"
+                    class="img-fluid min-w-full object-contain max-h-[600px]"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative testimonials w-full h-screen">
+        <div
+          class="w-full h-screen absolute top-0 -z-[1] bg-center bg-cover bg-no-repeat"
+          style="background-image: url('/assets/images/fullbgBlue.png')"
+        ></div>
+
+        <div
+          class="block items-center justify-center flex-col relative w-full text-white"
+        >
+          <hr
+            class="hidden lg:block absolute top-24 !h-[2px] w-full bg-white"
+          />
+          <div class="flexy text-center py-6 px-6">
+            <h1 class="text-5xl lg:text-6xl organetto uppercase">
+              happy clients
+            </h1>
+          </div>
+
+          <div class="py-10">
+            <div class="testimonialSlider">
+              <div class="text-center testiSlide">
+                <img
+                  src="assets/images/testi1.png"
+                  class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                />
+                <div
+                  class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                >
+                  <div class="flexy gap-x-2">
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                  </div>
+                  <p class="text-md">
+                    I was skeptical about online puppy listings, but Pups4Sale
+                    made the process incredibly safe and easy. Their verified
+                    breeders gave me peace of mind, and now Max, my Golden
+                    Retriever, is my best companion!
+                  </p>
+                  <p class="text-xl font-bold">Samantha, Brisbane</p>
+                </div>
+              </div>
+
+              <div class="text-center testiSlide">
+                <img
+                  src="assets/images/testi2.png"
+                  class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                />
+                <div
+                  class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                >
+                  <div class="flexy gap-x-2">
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                  </div>
+                  <p class="text-md">
+                    I was skeptical about online puppy listings, but Pups4Sale
+                    made the process incredibly safe and easy. Their verified
+                    breeders gave me peace of mind, and now Max, my Golden
+                    Retriever, is my best companion!
+                  </p>
+                  <p class="text-xl font-bold">Samantha, Brisbane</p>
+                </div>
+              </div>
+
+              <div class="text-center testiSlide">
+                <img
+                  src="assets/images/testi3.png"
+                  class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                />
+                <div
+                  class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                >
+                  <div class="flexy gap-x-2">
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                  </div>
+                  <p class="text-md">
+                    I was skeptical about online puppy listings, but Pups4Sale
+                    made the process incredibly safe and easy. Their verified
+                    breeders gave me peace of mind, and now Max, my Golden
+                    Retriever, is my best companion!
+                  </p>
+                  <p class="text-xl font-bold">Samantha, Brisbane</p>
+                </div>
+              </div>
+
+              <div class="text-center testiSlide">
+                <img
+                  src="assets/images/testi4.png"
+                  class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                />
+                <div
+                  class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                >
+                  <div class="flexy gap-x-2">
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                  </div>
+                  <p class="text-md">
+                    I was skeptical about online puppy listings, but Pups4Sale
+                    made the process incredibly safe and easy. Their verified
+                    breeders gave me peace of mind, and now Max, my Golden
+                    Retriever, is my best companion!
+                  </p>
+                  <p class="text-xl font-bold">Samantha, Brisbane</p>
+                </div>
+              </div>
+
+              <div class="text-center testiSlide">
+                <img
+                  src="assets/images/testi5.png"
+                  class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                />
+                <div
+                  class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                >
+                  <div class="flexy gap-x-2">
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                  </div>
+                  <p class="text-md">
+                    I was skeptical about online puppy listings, but Pups4Sale
+                    made the process incredibly safe and easy. Their verified
+                    breeders gave me peace of mind, and now Max, my Golden
+                    Retriever, is my best companion!
+                  </p>
+                  <p class="text-xl font-bold">Samantha, Brisbane</p>
+                </div>
+              </div>
+
+              <div class="text-center testiSlide">
+                <img
+                  src="assets/images/testi6.png"
+                  class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                />
+                <div
+                  class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                >
+                  <div class="flexy gap-x-2">
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                  </div>
+                  <p class="text-md">
+                    I was skeptical about online puppy listings, but Pups4Sale
+                    made the process incredibly safe and easy. Their verified
+                    breeders gave me peace of mind, and now Max, my Golden
+                    Retriever, is my best companion!
+                  </p>
+                  <p class="text-xl font-bold">Samantha, Brisbane</p>
+                </div>
+              </div>
+
+              <div class="text-center testiSlide">
+                <img
+                  src="assets/images/testi7.png"
+                  class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                />
+                <div
+                  class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                >
+                  <div class="flexy gap-x-2">
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                    <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                  </div>
+                  <p class="text-md">
+                    I was skeptical about online puppy listings, but Pups4Sale
+                    made the process incredibly safe and easy. Their verified
+                    breeders gave me peace of mind, and now Max, my Golden
+                    Retriever, is my best companion!
+                  </p>
+                  <p class="text-xl font-bold">Samantha, Brisbane</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative w-full h-full readyTake">
+        <div
+          class="w-full h-full absolute top-0 -z-[1] bg-center bg-cover bg-no-repeat"
+          style="background-image: url('/assets/images/consultation.png')"
+        ></div>
+
+        <div class="relative flexy w-full h-full py-12 lg:py-28 px-6 lg:px-12">
+          <div
+            class="flex flex-col lg:flex-row items-center justify-start lg:justify-between text-white w-full h-full"
+          >
+            <div class="relative itemsStart w-full flex-col space-y-5">
+              <div
+                class="itemsStart flex-col space-y-1 text-4xl lg:text-6xl uppercase montSemibold"
+              >
+                <h1>ready to</h1>
+                <h1>experience the</h1>
+                <h1>nima</h1>
+                <h1>Difference</h1>
+              </div>
+
+              <div class="itemsStart lg:w-2/3">
+                <ul class="itemsStart flex-col space-y-2">
+                  <li class="justStart gap-x-3">
+                    <div
+                      class="rounded-full flexy p-2.5 w-7 h-7 bg-[#00D2FF] text-white"
+                    >
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                    <span>Reclaim your confidence.</span>
+                  </li>
+
+                  <li class="justStart gap-x-3">
+                    <div
+                      class="rounded-full flexy p-2.5 w-7 h-7 bg-[#00D2FF] text-white"
+                    >
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                    <span>Revitalize your body.</span>
+                  </li>
+
+                  <li class="justStart gap-x-3">
+                    <div
+                      class="rounded-full flexy p-2.5 w-7 h-7 bg-[#00D2FF] text-white"
+                    >
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                    <span>Restore your sexual wellness.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="relative lg:max-w-[550px] w-full h-full flexy overflow-hidden"
+            >
+              <img
+                src="assets/images/scheduleBgblue.png"
+                class="img-fluid"
+                alt=""
+              />
+
+              <div
+                class="absolute p-8 justCenter w-full flex-col space-y-2 lg:space-y-4"
+              >
+                <div
+                  class="justCenter flex-col space-y-1 text-2xl lg:text-4xl uppercase montSemibold"
+                >
+                  <h1>schedule your</h1>
+                  <h1>consultation</h1>
+                  <h1>today!</h1>
+                </div>
+
+                <ul class="justCenter flex-col space-y-1">
+                  <li>
+                    <a href="javascript:void(0)" class="text-md"
+                      ><span class="montMedium text-lg">Visit Us:</span> 19782
+                      MacArthur Blvd. Suite 225, Irvine, CA 92612</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="tel:9497639255" class="text-lg"
+                      ><span class="montMedium">Call Us:</span> 949 - 763 -
+                      9255</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="https://nimawellness.com" class="text-lg"
+                      ><span class="montMedium">Website:</span>
+                      https://nimawellness.com</a
+                    >
+                  </li>
+                </ul>
+
+                <a
+                  href="javascript:void(0)"
+                  class="flexy cursor-pointer uppercase py-2 px-4 lg:px-8 rounded-full bg-gradient-to-r from-[#3498DB] to-[#00D2FF]"
+                >
+                  virtual consult
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative w-full h-full journey">
+        <div
+          class="absolute -z-[1] h-full w-full bg-cover bg-center bg-no-repeat"
+          style="background-image: url('/assets/images/bgMenuWhite.png')"
+        ></div>
+
+        <div class="py-10 lg:py-20 sm:px-12 w-full h-full">
+          <div
+            class="relative w-full h-full max-h-[450px] bg-gradient-to-br from-[#3498DB] to-[#00D2FF] rounded-2xl overflow-hidden"
+          >
+            <div
+              class="itemsStart flex-col lg:flex-row lg:justify-between max-lg:space-y-5 lg:space-x-10 text-white p-8 lg:p-20"
+            >
+              <div
+                class="justCenter flex-col space-y-1 uppercase text-3xl lg:text-5xl montSemibold lg:w-1/2"
+              >
+                <h1>your journey</h1>
+                <h1>to confidence &</h1>
+                <h1>vitality starts</h1>
+                <h1>here!</h1>
+              </div>
+
+              <div
+                class="justCenter flex-col space-y-5 lg:space-y-10 lg:w-[47%]"
+              >
+                <p class="text-md">
+                  Join Dr. Faisal Uraizee and the team at NIMA as they pioneer
+                  the future of aesthetics, wellness, and total-body
+                  transformation. Whether you're looking for flawless skin, a
+                  sculpted physique, or renewed sexual vitality, we have the
+                  solution.
+                </p>
+
+                <a
+                  href="javascript:void(0)"
+                  class="flexy cursor-pointer uppercase py-2 px-4 lg:px-8 rounded-full !border-2 border-white"
+                >
+                  virtual consult
+                </a>
+              </div>
             </div>
           </div>
         </div>

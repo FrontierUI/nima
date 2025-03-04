@@ -141,3 +141,14 @@ $(document).ready(function () {
     responsive: [{ breakpoint: 768, settings: { slidesToShow: 1 } }],
   });
 });
+
+$(document).ready(function () {
+  $('.patientSlider').slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [{ breakpoint: 768, settings: { slidesToShow: 1 } }],
+  });
+});

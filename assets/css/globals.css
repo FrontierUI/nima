@@ -63,6 +63,12 @@ a:active {
   justify-content: space-between;
 }
 
+.startBet {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .itemsStart {
   display: flex;
   align-items: flex-start;
