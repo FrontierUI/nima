@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 @font-face {
   font-family: 'Organetto-Regular';
@@ -20,6 +20,25 @@
   src: url('/assets/fonts/Galano-Grotesque-Medium.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('/assets/fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('/assets/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('/assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('/assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
 *,
 ::before,
 ::after {
@@ -34,7 +53,7 @@ body {
   background: #fff;
   color: #333333;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   width: 100%;
   min-width: 100%;
@@ -44,6 +63,10 @@ a,
 a:hover,
 a:active {
   text-decoration: none;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .img-fluid {
@@ -107,23 +130,28 @@ a:active {
 }
 
 .montMedium {
-  font-family: 'Montserrat' sans-serif;
+  font-family: 'Montserrat-Medium', sans-serif;
   font-weight: 500;
 }
 
 .montBold {
-  font-family: 'Montserrat' sans-serif;
+  font-family: 'Montserrat-Bold', sans-serif;
   font-weight: 700;
 }
 
 .montSemibold {
-  font-family: 'Montserrat' sans-serif;
+  font-family: 'Montserrat-Semibold', sans-serif;
   font-weight: 600;
 }
 
 .montLight {
-  font-family: 'Montserrat' sans-serif;
+  font-family: 'Montserrat-Light', sans-serif;
   font-weight: 300;
+}
+
+.openRegular {
+  font-family: 'Open Sans';
+  font-weight: 400;
 }
 
 .verticalLr {
